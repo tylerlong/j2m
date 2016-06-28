@@ -29,4 +29,11 @@ describe('inspector', function() {
       assert.equal('Teacher[]', inspector.get_type('teachers', [{}, {}]));
     });
   });
+
+  describe('#get_fields()', () => {
+    it('should return all the fields objects', () => {
+      assert.deepEqual([{key: 'name', type: 'string', value: 'tyler'}], inspector.get_fields({ 'name': 'tyler' }));
+      assert.deepEqual([{key: 'age', type: 'integer', value: 15}, {key: 'name', type: 'string', value: 'tyler'}], inspector.get_fields({ 'age': 15, 'name': 'tyler' }));
+    });
+  });
 });
