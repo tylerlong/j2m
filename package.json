@@ -4,7 +4,8 @@
   "description": "Generate models according to json data.",
   "main": "mg.js",
   "dependencies": {
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "deepmerge": "^0.2.10"
   },
   "devDependencies": {},
   "scripts": {},
