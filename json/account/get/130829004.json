@@ -1,0 +1,39 @@
+{
+  "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004",
+  "id" : 130829004,
+  "serviceInfo" : {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/service-info",
+    "brand" : {
+      "id" : "1210",
+      "name" : "RingCentral",
+      "homeCountry" : {
+        "id" : "1",
+        "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "name" : "United States",
+        "isoCode" : "US",
+        "callingCode" : "1"
+      }
+    },
+    "servicePlan" : {
+      "id" : "4499",
+      "name" : "Sandbox Office 4 lines Enterprise Edition",
+      "edition" : "Enterprise"
+    },
+    "billingPlan" : {
+      "id" : "8853",
+      "name" : "Monthly-109.98-Sandbox 4 Line",
+      "durationUnit" : "Month",
+      "duration" : 1,
+      "type" : "Regular"
+    }
+  },
+  "operator" : {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/130829004",
+    "id" : 130829004,
+    "extensionNumber" : "101"
+  },
+  "mainNumber" : "+17322764403",
+  "status" : "Confirmed",
+  "signupInfo" : { },
+  "setupWizardState" : "Completed"
+}

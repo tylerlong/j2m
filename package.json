@@ -1,0 +1,25 @@
+{
+  "name": "model-generator",
+  "version": "1.0.0",
+  "description": "Generate models according to json data.",
+  "main": "mg.js",
+  "dependencies": {
+    "commander": "^2.9.0"
+  },
+  "devDependencies": {},
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylerlong/model-generator.git"
+  },
+  "keywords": [
+    "model",
+    "generator"
+  ],
+  "author": "Tyler Long",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tylerlong/model-generator/issues"
+  },
+  "homepage": "https://github.com/tylerlong/model-generator#readme"
+}

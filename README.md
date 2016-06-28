@@ -3,6 +3,15 @@
 Generate models according to json data.
 
 
+## Usage
+
+Generate `account` model in C#:
+
+```shell
+node mg.js cs -m account
+```
+
+
 ## Example
 
 ### `user.json`:
@@ -45,7 +54,7 @@ public partial class User
 
 ### Usage of generated model
 
-```
+```csharp
 using Newtonsoft.Json;
 
 var content = File.ReadAllText("user.json");
