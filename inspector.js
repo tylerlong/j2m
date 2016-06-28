@@ -25,6 +25,12 @@ var inspector = {
     } else {
       return type;
     }
+  },
+  get_fields: (obj) => {
+    return Object.keys(obj)
+      .map((key) => {
+        return { key: key, type: inspector.get_type(key, obj[key]), value: obj[key]}
+      });
   }
 };
 

@@ -25,10 +25,7 @@ fs.access(folder, fs.F_OK, function(err) {
   } else {
     var data = json.read_folder(folder);
     console.log(data);
-    var fields = Object.keys(data)
-      .map((field) => {
-        return { key: field, type: inspector.get_type(field, data[field]) }
-      });
+    var fields = inspector.get_fields(data);
     console.log(fields);
   }
 });
