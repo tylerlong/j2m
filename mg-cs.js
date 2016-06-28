@@ -14,7 +14,8 @@ console.log('generate model for: ' + program.model);
 
 
 var fs = require('fs');
-var json = require('./json')
+var json = require('./json');
+var inspector = require('./inspector');
 
 
 var folder = './json/' + program.model + '/get/';
@@ -24,5 +25,10 @@ fs.access(folder, fs.F_OK, function(err) {
   } else {
     var data = json.read_folder(folder);
     console.log(data);
+    var fields = Object.keys(data)
+      .map((field) => {
+        return { key: field, type: inspector.get_type(field, data[field]) }
+      });
+    console.log(fields);
   }
 });

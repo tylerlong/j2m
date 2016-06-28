@@ -5,10 +5,15 @@
   "main": "mg.js",
   "dependencies": {
     "commander": "^2.9.0",
-    "deepmerge": "^0.2.10"
+    "deepmerge": "^0.2.10",
+    "pluralize": "^3.0.0"
   },
-  "devDependencies": {},
-  "scripts": {},
+  "devDependencies": {
+    "mocha": "^2.5.3"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tylerlong/model-generator.git"

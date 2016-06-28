@@ -3,6 +3,11 @@
 Generate models according to json data.
 
 
+## todo
+
+Write tests
+
+
 ## Usage
 
 Generate `account` model in C#:
