@@ -1,27 +1,16 @@
-var pluralize = require('pluralize');
+var string_util = require('./string_util');
 
-
-var is_integer = (n) => {
-  return n === +n && n === (n|0);
-}
-
-var capitalize_first_letter = (string) => {
-  return string.charAt(0).toUpperCase() + string.slice(1);
-}
-
-var singular = (word) => {
-  return pluralize(word, 1);
-}
 
 var inspector = {
   get_type: (key, value) => {
     var type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
-    if(type === 'number' && is_integer(value)) {
+    if(type === 'number' && string_util.is_integer(value)) {
       return 'integer';
     } else if(type === 'array') {
+      // todo: deepmerge all elements in array
       return inspector.get_type(key, value[0]) + '[]';
     } else if(type === 'object') {
-      return capitalize_first_letter(singular(key));
+      return string_util.capitalize_first_letter(string_util.singular(key));
     } else {
       return type;
     }
@@ -29,7 +18,7 @@ var inspector = {
   get_fields: (obj) => {
     return Object.keys(obj)
       .map((key) => {
-        return { key: key, type: inspector.get_type(key, obj[key]), value: obj[key]}
+        return { name: key, type: inspector.get_type(key, obj[key]), value: obj[key]}
       });
   }
 };

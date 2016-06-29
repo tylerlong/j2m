@@ -3,6 +3,11 @@
 Generate models according to json data.
 
 
+## todo
+
+1. `var` => `let` / `const`
+
+
 ## Usage
 
 Generate `account` model in C#:
