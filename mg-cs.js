@@ -20,7 +20,7 @@ var nunjucks = require('./nunjucks');
 
 
 var folder = './json/' + program.model;
-fs.access(folder, fs.F_OK, function(err) {
+fs.access(folder, fs.F_OK, (err) => {
   if(err) {
     console.error("Folder " + folder + " doesn't exist!");
   } else {

@@ -1,7 +1,11 @@
 var nunjucks = require('nunjucks');
+var string_util = require('./string_util');
 
 
-nunjucks.configure('template', { autoescape: false });
+env = nunjucks.configure('template', { autoescape: false });
+env.addFilter('pascal_case', (str) => {
+    return string_util.capitalize_first_letter(str);
+});
 
 
-module.exports = nunjucks;
+module.exports = env;
