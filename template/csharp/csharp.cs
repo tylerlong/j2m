@@ -1,3 +1,3 @@
-{% import "csharp/macros.cs" as macros %}
+{% import "csharp/macros.cs" as macros -%}
 
 {{ macros.class(cls) }}
