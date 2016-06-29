@@ -9,7 +9,7 @@ let string_util = {
   },
   singular: (word) => {
     return pluralize(word, 1);
-  }
+  },
 };
 
 module.exports = string_util;
