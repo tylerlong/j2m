@@ -1,7 +1,12 @@
+{% macro field(fld) -%}
+public {{ fld.type }} {{ fld.name }};
+{%- endmacro %}
+
+
 {% macro class_internal(cls) %}
 {
-    {% for field in cls.fields %}
-    public {{ field.type }} {{ field.name }};
+    {% for fld in cls.fields %}
+    {{ field(fld) }}
     {% endfor -%}
 
     {% for innerClass in cls.classes %}
