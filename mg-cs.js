@@ -28,6 +28,7 @@ fs.access(folder, fs.F_OK, (err) => {
     let fields = inspector.get_fields(data);
     let cls = inspector.get_class(program.model, data);
     let template  = nunjucks.render('csharp/csharp.cs', { cls: cls });
+    template = template.replace(/ +$/gm, '');
     console.log(template);
     fs.writeFileSync('output/Account.cs', template);
   }
