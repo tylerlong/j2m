@@ -26,7 +26,9 @@ fs.access(folder, fs.F_OK, (err) => {
   } else {
     let data = json.read_folder(folder);
     let fields = inspector.get_fields(data);
-    let template = nunjucks.render('csharp.cs', { class: program.model, fields: fields });
+    let cls = inspector.get_class(program.model, data);
+    let template  = nunjucks.render('csharp/csharp.cs', { cls: cls });
     console.log(template);
+    fs.writeFileSync('output/Account.cs', template);
   }
 });
