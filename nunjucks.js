@@ -1,5 +1,5 @@
-var nunjucks = require('nunjucks');
-var string_util = require('./string_util');
+let nunjucks = require('nunjucks');
+let string_util = require('./string_util');
 
 
 env = nunjucks.configure('template', { autoescape: false });

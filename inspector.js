@@ -1,9 +1,9 @@
-var string_util = require('./string_util');
+let string_util = require('./string_util');
 
 
-var inspector = {
+let inspector = {
   get_type: (key, value) => {
-    var type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+    let type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
     if(type === 'number' && string_util.is_integer(value)) {
       return 'integer';
     } else if(type === 'array') {

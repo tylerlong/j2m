@@ -1,5 +1,5 @@
-var assert = require('assert');
-var inspector = require('../inspector');
+let assert = require('assert');
+let inspector = require('../inspector');
 
 
 describe('inspector', () => {

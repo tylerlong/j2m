@@ -6,6 +6,7 @@ Generate models according to json data.
 ## todo
 
 1. `var` => `let` / `const`
+1. windows powershell "greprc" exclude .git and node_modules
 
 
 ## Usage

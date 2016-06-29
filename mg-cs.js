@@ -1,4 +1,4 @@
-var program = require('commander');
+let program = require('commander');
 
 program
   .version(require('./package.json').version)
@@ -13,22 +13,20 @@ if(program.model === undefined) {
 console.log('generate model for: ' + program.model);
 
 
-var fs = require('fs');
-var json = require('./json');
-var inspector = require('./inspector');
-var nunjucks = require('./nunjucks');
+let fs = require('fs');
+let json = require('./json');
+let inspector = require('./inspector');
+let nunjucks = require('./nunjucks');
 
 
-var folder = './json/' + program.model;
+let folder = './json/' + program.model;
 fs.access(folder, fs.F_OK, (err) => {
   if(err) {
     console.error("Folder " + folder + " doesn't exist!");
   } else {
-    var data = json.read_folder(folder);
-    console.log(data);
-    var fields = inspector.get_fields(data);
-    console.log(fields);
-    var template = nunjucks.render('csharp.cs', { class: program.model, fields: fields });
+    let data = json.read_folder(folder);
+    let fields = inspector.get_fields(data);
+    let template = nunjucks.render('csharp.cs', { class: program.model, fields: fields });
     console.log(template);
   }
 });
