@@ -29,8 +29,16 @@ npm install j2m
 
 Generate `account` model in C#:
 
+Specify a folder which contains json files for model `account`:
+
 ```shell
-j2m cs -m account
+j2m cs -m account -f test/fixtures/json/account/
+```
+
+Specify a json file which is the definition for model `account`:
+
+```shell
+j2m cs -m account -j test/fixtures/json/account/130829004.json
 ```
 
 

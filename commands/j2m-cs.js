@@ -9,7 +9,7 @@ program
 
 
 const fs = require('fs');
-const jsonUtil = require('../json');
+const jsonUtil = require('../jsonUtil');
 const inspector = require('../inspector');
 const nunjucks = require('../nunjucks');
 
