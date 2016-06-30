@@ -2,7 +2,7 @@
   "name": "j2m",
   "version": "1.0.0",
   "description": "Generate models according to json data.",
-  "main": "commands/j2m.js",
+  "main": "j2m.js",
   "dependencies": {
     "commander": "^2.9.0",
     "deepmerge": "^0.2.10",
@@ -22,7 +22,7 @@
     "lint": "eslint ."
   },
   "bin": {
-    "j2m": "commands/j2m.js"
+    "j2m": "j2m.js"
   },
   "repository": {
     "type": "git",

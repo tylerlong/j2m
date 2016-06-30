@@ -1,7 +1,10 @@
+#! /usr/bin/env node
+
 const program = require('commander');
 
 program
-  .version(require('../package.json').version)
+  .version(require('./package.json').version)
+  .option('-l, --lang <lang>', 'programming language file extension')
   .option('-j, --json <json>', 'path to json file')
   .option('-f, --folder <folder>', 'directory which contains json files')
   .option('-m, --model <model>', 'the generated model name')
@@ -9,9 +12,9 @@ program
 
 
 const fs = require('fs');
-const jsonUtil = require('../jsonUtil');
-const inspector = require('../inspector');
-const nunjucks = require('../nunjucks');
+const jsonUtil = require('./jsonUtil');
+const inspector = require('./inspector');
+const nunjucks = require('./nunjucks');
 
 
 const folder = program.folder;
