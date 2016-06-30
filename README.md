@@ -30,7 +30,7 @@ npm install j2m
 Generate `account` model in C#:
 
 ```shell
-node mg.js cs -m account
+j2m cs -m account
 ```
 
 

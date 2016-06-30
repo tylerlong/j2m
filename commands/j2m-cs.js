@@ -2,7 +2,9 @@ const program = require('commander');
 
 program
   .version(require('../package.json').version)
-  .option('-m, --model <model>', 'model to be generate')
+  .option('-j, --json <file>', 'json file')
+  .option('-d, --dir <folder>', 'directory which contains json files')
+  .option('-m, --model <model>', 'model name')
   .parse(process.argv);
 
 
@@ -12,7 +14,8 @@ const inspector = require('../inspector');
 const nunjucks = require('../nunjucks');
 
 
-const folder = `./json/${program.model}`;
+const folder = program.folder;
+console.log(folder);
 fs.access(folder, fs.F_OK, (err) => {
   if (err) {
     console.error(`Folder ${folder} doesn't exist!`);
