@@ -1,5 +1,5 @@
-let assert = require('assert');
-let inspector = require('../inspector');
+const assert = require('assert');
+const inspector = require('../inspector');
 
 
 describe('inspector', () => {
@@ -20,7 +20,7 @@ describe('inspector', () => {
     });
     it('should recognize arrays', () => {
       assert.equal('integer[]', inspector.get_type('integers', [1, 2, 3]));
-      assert.equal('string[]', inspector.get_type('names', ['a', 'b', 'c'] ));
+      assert.equal('string[]', inspector.get_type('names', ['a', 'b', 'c']));
       assert.equal('number[]', inspector.get_type('floats', [1.5, 3.5, 5.6]));
     });
     it('should recognize objects', () => {
@@ -32,10 +32,11 @@ describe('inspector', () => {
 
   describe('#get_fields()', () => {
     it('should return all the fields objects', () => {
-      assert.deepEqual([{name: 'name', type: 'string', value: 'tyler'}], inspector.get_fields({ 'name': 'tyler' }));
-      assert.deepEqual([{name: 'age', type: 'integer', value: 15},
-                        {name: 'name', type: 'string', value: 'tyler'}],
-        inspector.get_fields({ 'age': 15, 'name': 'tyler' }));
+      assert.deepEqual([{ name: 'name', type: 'string', value: 'tyler' }],
+        inspector.get_fields({ name: 'tyler' }));
+      assert.deepEqual([{ name: 'age', type: 'integer', value: 15 },
+                        { name: 'name', type: 'string', value: 'tyler' }],
+        inspector.get_fields({ age: 15, name: 'tyler' }));
     });
   });
 });

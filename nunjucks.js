@@ -1,5 +1,5 @@
 const nunjucks = require('nunjucks');
-const string_util = require('./string_util');
+const StringUtil = require('./string_util');
 
 
 const env = nunjucks.configure('template', {
@@ -8,7 +8,7 @@ const env = nunjucks.configure('template', {
   lstripBlocks: true,
 });
 env.addFilter('pascal_case', (str) => {
-    return string_util.capitalize_first_letter(str);
+    return StringUtil.capitalize_first_letter(str);
 });
 env.addFilter('csharp_type', (type) => {
   if (type === 'integer') {
@@ -27,9 +27,9 @@ env.addFilter('csharp_type', (type) => {
 });
 env.addFilter('csharp_name', (name) => {
   if (name === 'operator') {
-    return `@${name}`
+    return `@${name}`;
   }
-  return name
+  return name;
 });
 
 

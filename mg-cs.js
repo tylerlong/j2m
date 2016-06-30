@@ -7,7 +7,7 @@ program
 
 if (program.model === undefined) {
   console.error('options required: -m <model>');
-  return;
+  process.exit(1);
 }
 
 console.log('generate model for: ' + program.model);

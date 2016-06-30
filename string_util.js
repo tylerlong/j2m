@@ -1,6 +1,7 @@
 const pluralize = require('pluralize');
 
-const string_util = {
+
+const StringUtil = {
   is_integer: (n) => {
     return n === +n && n === (n|0);
   },
@@ -12,4 +13,5 @@ const string_util = {
   },
 };
 
-module.exports = string_util;
+
+module.exports = StringUtil;

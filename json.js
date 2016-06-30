@@ -13,7 +13,7 @@ const json = {
       .map((file) => json.read_file(path.join(folder, file)))
       .reduce((prev, data) => deepmerge(prev, data), {});
   },
-}
+};
 
 
 module.exports = json;
