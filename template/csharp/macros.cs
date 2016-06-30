@@ -1,5 +1,5 @@
 {% macro field(fld) -%}
-public {{ fld.type }} {{ fld.name }};
+public {{ fld.type | csharp_type }} {{ fld.name | csharp_name }};
 {%- endmacro %}
 
 

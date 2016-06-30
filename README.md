@@ -3,6 +3,12 @@
 Generate models according to json data.
 
 
+## todo
+
+1. support C# namespace
+1. auto generate test case
+    1. deserialize and compare the values
+
 ## Usage
 
 Generate `account` model in C#:
