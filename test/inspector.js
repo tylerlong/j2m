@@ -3,7 +3,7 @@ const inspector = require('../inspector');
 
 
 describe('inspector', () => {
-  describe('#get_type()', () => {
+  describe('get_type()', () => {
     it('should recognize strings', () => {
       assert.equal('string', inspector.get_type('name', 'tyler'));
       assert.equal('string', inspector.get_type('name', ''));
@@ -30,7 +30,7 @@ describe('inspector', () => {
     });
   });
 
-  describe('#get_fields()', () => {
+  describe('get_fields()', () => {
     it('should return all the fields objects', () => {
       assert.deepEqual([{ name: 'name', type: 'string', value: 'tyler' }],
         inspector.get_fields({ name: 'tyler' }));
