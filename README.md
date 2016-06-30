@@ -5,6 +5,7 @@ Generate models according to json data.
 
 ## todo
 
+1. editor/ide auto format code?
 1. support C# namespace
 1. auto generate test case
     1. deserialize and compare the values

@@ -24,8 +24,8 @@ describe('inspector', () => {
       assert.equal('number[]', inspector.get_type('floats', [1.5, 3.5, 5.6]));
     });
     it('should recognize objects', () => {
-      assert.equal('Student', inspector.get_type('student', { 'name': 'peter' }));
-      assert.equal('Teacher', inspector.get_type('teacher', {} ));
+      assert.equal('Student', inspector.get_type('student', { name: 'peter' }));
+      assert.equal('Teacher', inspector.get_type('teacher', {}));
       assert.equal('Teacher[]', inspector.get_type('teachers', [{}, {}]));
     });
   });

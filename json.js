@@ -9,7 +9,7 @@ const json = {
   },
   read_folder: (folder) => {
     return fs.readdirSync(folder)
-      .filter((file) =>  path.extname(file) === '.json')
+      .filter((file) => path.extname(file) === '.json')
       .map((file) => json.read_file(path.join(folder, file)))
       .reduce((prev, data) => deepmerge(prev, data), {});
   },

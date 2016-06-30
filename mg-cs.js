@@ -5,13 +5,6 @@ program
   .option('-m, --model <model>', 'model to be generate')
   .parse(process.argv);
 
-if (program.model === undefined) {
-  console.error('options required: -m <model>');
-  process.exit(1);
-}
-
-console.log('generate model for: ' + program.model);
-
 
 const fs = require('fs');
 const json = require('./json');
@@ -19,14 +12,14 @@ const inspector = require('./inspector');
 const nunjucks = require('./nunjucks');
 
 
-const folder = './json/' + program.model;
+const folder = `./json/${program.model}`;
 fs.access(folder, fs.F_OK, (err) => {
   if (err) {
-    console.error("Folder " + folder + " doesn't exist!");
+    console.error(`Folder ${folder} doesn't exist!`);
   } else {
     const data = json.read_folder(folder);
     const cls = inspector.get_class(program.model, data);
-    let template  = nunjucks.render('csharp/csharp.cs', { cls: cls });
+    let template = nunjucks.render('csharp/csharp.cs', { cls });
     template = template.replace(/ +$/gm, '');
     console.log(template);
     fs.writeFileSync('output/Account.cs', template);

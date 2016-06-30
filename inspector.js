@@ -25,7 +25,7 @@ const inspector = {
       name: StringUtil.capitalize_first_letter(StringUtil.singular(name)),
       fields: inspector.get_fields(obj),
       classes: inspector.get_fields(obj).filter((field) => /[A-Z]/.test(field.type[0]))
-        .map((field) => inspector.get_class(field.type, field.value))
+        .map((field) => inspector.get_class(field.type, field.value)),
     };
   },
 };
