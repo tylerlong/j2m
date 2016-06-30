@@ -22,6 +22,5 @@ fs.access(folder, fs.F_OK, (err) => {
     let template = nunjucks.render('csharp/csharp.cs', { cls });
     template = template.replace(/ +$/gm, '');
     console.log(template);
-    fs.writeFileSync('output/Account.cs', template);
   }
 });
