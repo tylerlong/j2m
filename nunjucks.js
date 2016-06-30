@@ -1,8 +1,8 @@
-let nunjucks = require('nunjucks');
-let string_util = require('./string_util');
+const nunjucks = require('nunjucks');
+const string_util = require('./string_util');
 
 
-env = nunjucks.configure('template', {
+const env = nunjucks.configure('template', {
   autoescape: false,
   trimBlocks: true,
   lstripBlocks: true,
@@ -11,22 +11,22 @@ env.addFilter('pascal_case', (str) => {
     return string_util.capitalize_first_letter(str);
 });
 env.addFilter('csharp_type', (type) => {
-  if(type === 'integer') {
+  if (type === 'integer') {
     return 'int?';
   }
-  if(type === 'integer[]') {
+  if (type === 'integer[]') {
     return 'int?[]';
   }
-  if(type === 'number') {
+  if (type === 'number') {
     return 'double?';
   }
-  if(type === 'number[]') {
+  if (type === 'number[]') {
     return 'double?[]';
   }
   return type;
 });
 env.addFilter('csharp_name', (name) => {
-  if(name === 'operator') {
+  if (name === 'operator') {
     return `@${name}`
   }
   return name

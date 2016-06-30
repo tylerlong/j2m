@@ -1,6 +1,6 @@
-let pluralize = require('pluralize');
+const pluralize = require('pluralize');
 
-let string_util = {
+const string_util = {
   is_integer: (n) => {
     return n === +n && n === (n|0);
   },

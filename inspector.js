@@ -1,15 +1,15 @@
-let string_util = require('./string_util');
+const StringUtil = require('./string_util');
 
 
-let inspector = {
+const inspector = {
   get_type: (key, value) => {
-    let type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
-    if(type === 'number' && string_util.is_integer(value)) {
+    const type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+    if (type === 'number' && StringUtil.is_integer(value)) {
       return 'integer';
-    } else if(type === 'array') {
+    } else if (type === 'array') {
       return inspector.get_type(key, value[0]) + '[]';
-    } else if(type === 'object') {
-      return string_util.capitalize_first_letter(string_util.singular(key));
+    } else if (type === 'object') {
+      return StringUtil.capitalize_first_letter(StringUtil.singular(key));
     } else {
       return type;
     }
@@ -22,7 +22,7 @@ let inspector = {
   },
   get_class: (name, obj) => {
     return {
-      name: string_util.capitalize_first_letter(string_util.singular(name)),
+      name: StringUtil.capitalize_first_letter(StringUtil.singular(name)),
       fields: inspector.get_fields(obj),
       classes: inspector.get_fields(obj).filter((field) => /[A-Z]/.test(field.type[0])).map((field) => inspector.get_class(field.type, field.value))
     }

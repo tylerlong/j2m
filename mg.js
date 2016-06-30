@@ -1,6 +1,6 @@
 #! /usr/bin/env node
 
-let program = require('commander');
+const program = require('commander');
 
 program
   .version(require('./package.json').version)

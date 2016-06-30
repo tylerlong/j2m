@@ -19,7 +19,7 @@
   },
   "scripts": {
     "test": "mocha",
-    "lint": "eslint json.js"
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",

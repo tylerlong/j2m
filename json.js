@@ -1,9 +1,9 @@
-let fs = require('fs');
-let path = require('path');
-let deepmerge = require('deepmerge');
+const fs = require('fs');
+const path = require('path');
+const deepmerge = require('deepmerge');
 
 
-let json = {
+const json = {
   read_file: (file) => {
     return JSON.parse(fs.readFileSync(file, 'utf8'));
   },
