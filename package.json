@@ -21,6 +21,9 @@
     "test": "eslint . && mocha",
     "lint": "eslint ."
   },
+  "bin": {
+    "j2m": "commands/j2m.js"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/tylerlong/j2m.git"
@@ -28,7 +31,7 @@
   "keywords": [
     "j2m",
     "model",
-    "json",
+    "json"
   ],
   "author": "Tyler Long",
   "license": "MIT",
