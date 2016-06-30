@@ -1,6 +1,12 @@
-# Model Generator
+# j2m
 
-Generate models according to json data.
+`j2m` is short for `Json to Model`.
+
+Generate model according to json data.
+Why? Once you have the model, you can deserialize json to model.
+
+You can specify either one or multiple json files as input.
+Multiple json files will be deep-merged into one json file before processing.
 
 
 ## todo
@@ -10,6 +16,13 @@ Generate models according to json data.
 1. auto generate test case
     1. deserialize and compare the values
 1. check style according to http://es6.ruanyifeng.com/#docs/
+
+
+## Installation
+
+```shell
+npm install j2m
+```
 
 
 ## Usage

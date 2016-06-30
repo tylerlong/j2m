@@ -1,15 +1,15 @@
 const program = require('commander');
 
 program
-  .version(require('./package.json').version)
+  .version(require('../package.json').version)
   .option('-m, --model <model>', 'model to be generate')
   .parse(process.argv);
 
 
 const fs = require('fs');
-const json = require('./json');
-const inspector = require('./inspector');
-const nunjucks = require('./nunjucks');
+const json = require('../json');
+const inspector = require('../inspector');
+const nunjucks = require('../nunjucks');
 
 
 const folder = `./json/${program.model}`;

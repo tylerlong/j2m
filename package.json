@@ -1,8 +1,8 @@
 {
-  "name": "model-generator",
+  "name": "j2m",
   "version": "1.0.0",
   "description": "Generate models according to json data.",
-  "main": "mg.js",
+  "main": "commands/j2m.js",
   "dependencies": {
     "commander": "^2.9.0",
     "deepmerge": "^0.2.10",
@@ -23,16 +23,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tylerlong/model-generator.git"
+    "url": "git+https://github.com/tylerlong/j2m.git"
   },
   "keywords": [
+    "j2m",
     "model",
-    "generator"
+    "json",
   ],
   "author": "Tyler Long",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/tylerlong/model-generator/issues"
+    "url": "https://github.com/tylerlong/j2m/issues"
   },
-  "homepage": "https://github.com/tylerlong/model-generator#readme"
+  "homepage": "https://github.com/tylerlong/j2m#readme"
 }
