@@ -7,9 +7,7 @@ const env = nunjucks.configure('template', {
   trimBlocks: true,
   lstripBlocks: true,
 });
-env.addFilter('pascal_case', (str) => {
-  return StringUtil.capitalize_first_letter(str);
-});
+env.addFilter('pascal_case', (str) => StringUtil.capitalize_first_letter(str));
 env.addFilter('csharp_type', (type) => {
   if (type === 'integer') {
     return 'int?';
