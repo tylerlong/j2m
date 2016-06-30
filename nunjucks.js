@@ -2,7 +2,7 @@ const nunjucks = require('nunjucks');
 const StringUtil = require('./string_util');
 
 
-const env = nunjucks.configure('template', {
+const env = nunjucks.configure('view', {
   autoescape: false,
   trimBlocks: true,
   lstripBlocks: true,
