@@ -1,5 +1,5 @@
 const nunjucks = require('nunjucks');
-const stringUtil = require('./stringUtil');
+const stringUtil = require('./helpers/string');
 
 
 const env = nunjucks.configure('views', {

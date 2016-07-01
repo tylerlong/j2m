@@ -19,7 +19,8 @@
   },
   "scripts": {
     "test": "eslint . && mocha",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "demo": "node j2m.js -l cs -m account -f test/fixtures/json/account/"
   },
   "bin": {
     "j2m": "j2m.js"

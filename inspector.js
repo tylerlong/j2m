@@ -1,4 +1,4 @@
-const stringUtil = require('./stringUtil');
+const stringUtil = require('./helpers/string');
 
 
 const inspector = {
