@@ -6,7 +6,6 @@ const nunjucks = require('../nunjucks');
 
 const process = (program) => {
   const folder = program.folder;
-  console.log(folder);
   fs.access(folder, fs.F_OK, (err) => {
     if (err) {
       console.error(`Folder ${folder} doesn't exist!`);
@@ -14,7 +13,7 @@ const process = (program) => {
       const data = jsonUtil.read_folder(folder);
       const cls = inspector.get_class(program.model, data);
       let template = nunjucks.render('csharp/csharp.cs', { cls });
-      template = template.replace(/ +$/gm, '');
+      template = template.replace(/ +$/gm, ''); // trim blank lines
       console.log(template);
     }
   });

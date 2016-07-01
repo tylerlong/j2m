@@ -11,7 +11,6 @@ Multiple json files will be deep-merged into one json file before processing.
 
 ## todo
 
-1. editor/ide auto format code?
 1. support C# namespace
 1. auto generate test case
     1. deserialize and compare the values
