@@ -15,6 +15,8 @@ Multiple json files will be deep-merged into one json file before processing.
 1. auto generate test case
     1. deserialize and compare the values
 1. check style according to http://es6.ruanyifeng.com/#docs/
+1. auto test upon saving
+1. best practice to write documentation
 
 
 ## Installation
@@ -31,66 +33,141 @@ Generate `account` model in C#:
 Specify a folder which contains json files for model `account`:
 
 ```shell
-j2m -l cs -m account -f test/fixtures/json/account/
+j2m -l cs -n account -f test/fixtures/json/account/
 ```
 
 Specify a json file which is the definition for model `account`:
 
 ```shell
-j2m -l cs -m account -j test/fixtures/json/account/130829004.json
+j2m -l cs -n account -j test/fixtures/json/account/130829004.json
 ```
 
 
 ## Example
 
-### `user.json`:
+### `account.json`:
 
 ```json
 {
-  "firstName": "Tyler",
-  "lastName": "Long",
-  "emails": ["aaa@example.com", "bbb@example.com"],
-  "projects":[
-    {
-      "name": "C# SDK",
-      "budget": "$100"
+  "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004",
+  "id" : 130829004,
+  "serviceInfo" : {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/service-info",
+    "brand" : {
+      "id" : "1210",
+      "name" : "RingCentral",
+      "homeCountry" : {
+        "id" : "1",
+        "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/dictionary/country/1",
+        "name" : "United States",
+        "isoCode" : "US",
+        "callingCode" : "1"
+      }
     },
-    {
-      "name": "C# Client",
-      "budget": "$200"
+    "servicePlan" : {
+      "id" : "4499",
+      "name" : "Sandbox Office 4 lines Enterprise Edition",
+      "edition" : "Enterprise"
+    },
+    "billingPlan" : {
+      "id" : "8853",
+      "name" : "Monthly-109.98-Sandbox 4 Line",
+      "durationUnit" : "Month",
+      "duration" : 1,
+      "type" : "Regular"
     }
-  ]
+  },
+  "operator" : {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/130829004",
+    "id" : 130829004,
+    "extensionNumber" : "101"
+  },
+  "mainNumber" : "+17322764403",
+  "status" : "Confirmed",
+  "signupInfo" : { },
+  "setupWizardState" : "Completed"
 }
 ```
+
 
 ### Generated C# model:
 
 ```csharp
-public partial class User
+public partial class Account
 {
-  public string firstName;
-  public string lastName;
-  public string[] emails;
-  public Project[] projects;
+    public string uri;
+    public int? id;
+    public ServiceInfo serviceInfo;
+    public Operator @operator;
+    public string mainNumber;
+    public string status;
+    public SignupInfo signupInfo;
+    public string setupWizardState;
 
-  public class Project
-  {
-    public string name;
-    public string budget;
-  }
+    public class ServiceInfo
+    {
+        public string uri;
+        public Brand brand;
+        public ServicePlan servicePlan;
+        public BillingPlan billingPlan;
+
+        public class Brand
+        {
+            public string id;
+            public string name;
+            public HomeCountry homeCountry;
+
+            public class HomeCountry
+            {
+                public string id;
+                public string uri;
+                public string name;
+                public string isoCode;
+                public string callingCode;
+            }
+        }
+
+        public class ServicePlan
+        {
+            public string id;
+            public string name;
+            public string edition;
+        }
+
+        public class BillingPlan
+        {
+            public string id;
+            public string name;
+            public string durationUnit;
+            public int? duration;
+            public string type;
+        }
+    }
+
+    public class Operator
+    {
+        public string uri;
+        public int? id;
+        public string extensionNumber;
+    }
+
+    public class SignupInfo
+    {
+    }
 }
 ```
+
 
 ### Usage of generated model
 
 ```csharp
 using Newtonsoft.Json;
 
-var content = File.ReadAllText("user.json");
-var user = JsonConvert.DeserilizeObject<User>(content);
+var content = File.ReadAllText("account.json");
+var account = JsonConvert.DeserilizeObject<Account>(content);
 ```
 
 
-## Other languages
+## Supported languages
 
-This project starts with C#. Other languages are in the todo list.
+- C#
