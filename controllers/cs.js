@@ -1,5 +1,5 @@
 const fs = require('fs');
-const jsonUtil = require('../jsonUtil');
+const jsonUtil = require('../helpers/json');
 const inspector = require('../inspector');
 const nunjucks = require('../nunjucks');
 
