@@ -7,6 +7,7 @@ const CSharpController = {
     const cls = inspector.get_class(name, json);
     let model = nunjucks.render('cs/index.cs', { cls });
     model = model.replace(/ +$/gm, ''); // trim blank lines
+    model = model.trim();
     return model;
   },
 };

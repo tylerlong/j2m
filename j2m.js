@@ -1,4 +1,5 @@
 #! /usr/bin/env node
+/* eslint no-console: "off" */
 const program = require('commander');
 const JsonHelper = require('./helpers/json');
 
