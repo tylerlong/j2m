@@ -4,30 +4,33 @@ const path = require('path');
 const JsonHelper = require('../helpers/json');
 
 
-const listFolders = (folder) => fs.readdirSync(folder).map((file) => path.join(folder, file))
-  .filter((file) => fs.lstatSync(file).isDirectory());
-const listFiles = (folder) => fs.readdirSync(folder).map((file) => path.join(folder, file))
+const listFolders = (folder) => fs.readdirSync(folder)
+  .map((file) => path.join(folder, file))
+  .filter((file) => fs.lstatSync(file).isDirectory())
+  .map((file) => [path.basename(file), file]);
+const listFiles = (folder) => fs.readdirSync(folder)
+  .map((file) => path.join(folder, file))
   .filter((file) => fs.lstatSync(file).isFile())
-  .map((file) => path.basename(file));
+  .map((file) => [path.basename(file), file]);
 
 describe('fixtures', () => {
   const languages = listFolders('test/fixtures')
-    .filter((folder) => path.basename(folder) !== 'json');
-  languages.forEach((language) => {
+    .filter(([folderName]) => folderName !== 'json');
+  languages.forEach(([languageName, languagePath]) => {
     // eslint-disable-next-line global-require
-    const LanguageController = require(path.join('../controllers', path.basename(language)));
-    describe(path.basename(language), () => {
-      const models = listFolders(language);
-      models.forEach((model) => {
-        describe(path.basename(model), () => {
-          const samples = listFiles(model);
-          samples.forEach((sample) => {
-            it(`should generate ${sample} correctly`, () => {
-              const jsonFile = path.join('test/fixtures/json', path.basename(model),
-                sample.replace(/\.[^/.]+$/, '.json'));
+    const LanguageController = require(path.join('../controllers', languageName));
+    describe(languageName, () => {
+      const models = listFolders(languagePath);
+      models.forEach(([modelName, modelPath]) => {
+        describe(modelName, () => {
+          const samples = listFiles(modelPath);
+          samples.forEach(([sampleName, samplePath]) => {
+            it(`should generate ${sampleName} correctly`, () => {
+              const jsonFile = path.join('test/fixtures/json', modelName,
+                sampleName.replace(/\.[^/.]+$/, '.json'));
               const jsonData = JsonHelper.readFile(jsonFile);
-              const languageData = LanguageController.render(path.basename(model), jsonData);
-              assert.equal(fs.readFileSync(path.join(model, sample), 'utf8'), languageData);
+              const languageData = LanguageController.render(modelName, jsonData);
+              assert.equal(fs.readFileSync(samplePath, 'utf8'), languageData);
             });
           });
         });
