@@ -1,5 +1,5 @@
 const nunjucks = require('nunjucks');
-const stringHelper = require('./helpers/string');
+const StringHelper = require('./helpers/string');
 
 
 const env = nunjucks.configure('views', {
@@ -7,7 +7,7 @@ const env = nunjucks.configure('views', {
   trimBlocks: true,
   lstripBlocks: true,
 });
-env.addFilter('pascal_case', (str) => stringHelper.capitalize_first_letter(str));
+env.addFilter('pascal_case', (str) => StringHelper.capitalizeHead(str));
 env.addFilter('csharp_type', (type) => {
   if (type === 'integer') {
     return 'int?';
