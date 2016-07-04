@@ -1,6 +1,6 @@
 {
   "name": "json2model",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Generate models according to json data.",
   "main": "j2m.js",
   "dependencies": {
