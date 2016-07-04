@@ -1,3 +1,4 @@
+const ChangeCase = require('change-case');
 const StringHelper = require('./helpers/string');
 
 
@@ -9,7 +10,7 @@ const inspector = {
     } else if (type === 'array') {
       return `${inspector.get_type(key, value[0])}[]`;
     } else if (type === 'object') {
-      return StringHelper.capitalizeHead(StringHelper.singularize(key));
+      return ChangeCase.pascalCase(StringHelper.singularize(key));
     }
     return type;
   },
@@ -20,7 +21,7 @@ const inspector = {
     value: obj[key],
   })),
   get_class: (name, obj) => ({
-    name: StringHelper.capitalizeHead(StringHelper.singularize(name)),
+    name: ChangeCase.pascalCase(StringHelper.singularize(name)),
     fields: inspector.get_fields(obj),
     classes: inspector.get_fields(obj).filter((field) => /[A-Z]/.test(field.type[0]))
       .map((field) => inspector.get_class(field.type, field.value)),
