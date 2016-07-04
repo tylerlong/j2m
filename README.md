@@ -28,6 +28,9 @@ npm install j2m
 
 ## Usage
 
+
+### Command line
+
 Generate `account` model in C#:
 
 Specify a folder which contains json files for model `account`:
@@ -40,6 +43,17 @@ Specify a json file which is the definition for model `account`:
 
 ```shell
 j2m -l cs -n account -j test/fixtures/json/account/130829004.json
+```
+
+
+### Node.js
+
+```javascript
+const JsonHelper = require('j2m/helpers/json');
+const json = JsonHelper.readFile('account.json') // Or read from folder: const json = JsonHelper.readFolder('./account/');
+const LanguageController = require('j2m/controllers/cs'); // language is C#
+const model = LanguageController.render('account', json); // model name is "account"
+console.log(model);
 ```
 
 

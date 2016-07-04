@@ -44,6 +44,6 @@ try {
   process.exit(1);
 }
 
-const LanguageController = require(`./controllers/${program.lang}.js`);
+const LanguageController = require(`./controllers/${program.lang}`);
 const model = LanguageController.render(program.name, json);
 console.log(model);
