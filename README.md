@@ -22,7 +22,7 @@ Multiple json files will be deep-merged into one json file before processing.
 ## Installation
 
 ```shell
-npm install j2m
+npm install json2model
 ```
 
 
