@@ -5,8 +5,8 @@
 Generate model according to json data.
 Why? Once you have the model, you can deserialize json to model.
 
-You can specify either one or multiple json files as input.
-Multiple json files will be deep-merged into one json file before processing.
+You can specify either a json file or a folder which contains json files as input.
+Multiple json files inside folder will be deep-merged into one json file before processing.
 
 
 ## todo

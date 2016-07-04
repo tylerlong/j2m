@@ -44,6 +44,13 @@ try {
   process.exit(1);
 }
 
-const LanguageController = require(`./controllers/${program.lang}`);
+let LanguageController = null;
+try {
+  // eslint-disable-next-line global-require
+  LanguageController = require(`./controllers/${program.lang}`);
+} catch (e) {
+  console.error(`${program.lang} is not a supported destination language`);
+  process.exit(1);
+}
 const model = LanguageController.render(program.name, json);
 console.log(model);
