@@ -1,0 +1,183 @@
+{
+  "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension?page=1&perPage=100",
+  "records" : [ {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/133715004",
+    "id" : 133715004,
+    "extensionNumber" : "102",
+    "contact" : {
+      "firstName" : "Den",
+      "lastName" : "Roman",
+      "email" : "droman@griddynamics.com"
+    },
+    "name" : "Den Roman",
+    "type" : "User",
+    "status" : "Enabled",
+    "permissions" : {
+      "admin" : {
+        "enabled" : false
+      },
+      "internationalCalling" : {
+        "enabled" : true
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/133715004/profile-image"
+    }
+  }, {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/133749004",
+    "id" : 133749004,
+    "extensionNumber" : "103",
+    "contact" : {
+      "firstName" : "Colin",
+      "lastName" : "Liu",
+      "email" : "colin.liu@ringcentral.com"
+    },
+    "name" : "Colin Liu",
+    "type" : "User",
+    "status" : "Enabled",
+    "permissions" : {
+      "admin" : {
+        "enabled" : false
+      },
+      "internationalCalling" : {
+        "enabled" : true
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/133749004/profile-image"
+    }
+  }, {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/133750004",
+    "id" : 133750004,
+    "extensionNumber" : "104",
+    "contact" : {
+      "firstName" : "David",
+      "lastName" : "lee",
+      "email" : "david.lee@ringcentral.com"
+    },
+    "name" : "David lee",
+    "type" : "User",
+    "status" : "Enabled",
+    "permissions" : {
+      "admin" : {
+        "enabled" : false
+      },
+      "internationalCalling" : {
+        "enabled" : true
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/133750004/profile-image"
+    }
+  }, {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/136369004",
+    "id" : 136369004,
+    "extensionNumber" : "105",
+    "contact" : {
+      "firstName" : "Announcement",
+      "lastName" : "Onlyl",
+      "email" : "rose.gan@ringcentral.com"
+    },
+    "name" : "Announcement Onlyl",
+    "type" : "User",
+    "status" : "NotActivated",
+    "permissions" : {
+      "admin" : {
+        "enabled" : false
+      },
+      "internationalCalling" : {
+        "enabled" : true
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/136369004/profile-image"
+    }
+  }, {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/136390004",
+    "id" : 136390004,
+    "extensionNumber" : "106",
+    "contact" : {
+      "firstName" : "RingCentral",
+      "lastName" : "Ext 106",
+      "email" : "anil.kumar@ringcentral.com"
+    },
+    "name" : "RingCentral Ext 106",
+    "type" : "User",
+    "status" : "NotActivated",
+    "permissions" : {
+      "admin" : {
+        "enabled" : false
+      },
+      "internationalCalling" : {
+        "enabled" : true
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/136390004/profile-image"
+    }
+  }, {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/136393004",
+    "id" : 136393004,
+    "extensionNumber" : "121",
+    "contact" : {
+      "firstName" : "Create_Recording",
+      "email" : "colin.liu@ringcentral.com"
+    },
+    "name" : "Create_Recording",
+    "type" : "Announcement",
+    "status" : "Enabled",
+    "permissions" : {
+      "admin" : {
+        "enabled" : false
+      },
+      "internationalCalling" : {
+        "enabled" : false
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/136393004/profile-image"
+    }
+  }, {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/130829004",
+    "id" : 130829004,
+    "extensionNumber" : "101",
+    "contact" : {
+      "firstName" : "Jitender",
+      "lastName" : "Kumar",
+      "company" : "RingCentral Integration Team",
+      "department" : "mndholder@gmail.com",
+      "email" : "joe@idp.com",
+      "businessPhone" : "+16501234567"
+    },
+    "name" : "Jitender Kumar",
+    "type" : "User",
+    "status" : "Enabled",
+    "permissions" : {
+      "admin" : {
+        "enabled" : true
+      },
+      "internationalCalling" : {
+        "enabled" : true
+      }
+    },
+    "profileImage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension/130829004/profile-image"
+    }
+  } ],
+  "paging" : {
+    "page" : 1,
+    "totalPages" : 1,
+    "perPage" : 100,
+    "totalElements" : 7,
+    "pageStart" : 0,
+    "pageEnd" : 6
+  },
+  "navigation" : {
+    "firstPage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension?page=1&perPage=100"
+    },
+    "lastPage" : {
+      "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0/account/130829004/extension?page=1&perPage=100"
+    }
+  }
+}

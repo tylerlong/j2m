@@ -1,0 +1,11 @@
+{
+  "uri" : "https://platform.devtest.ringcentral.com/restapi",
+  "apiVersions" : [ {
+    "uri" : "https://platform.devtest.ringcentral.com/restapi/v1.0",
+    "versionString" : "1.0.25",
+    "releaseDate" : "2016-04-29T00:00:00.000Z",
+    "uriString" : "v1.0"
+  } ],
+  "serverVersion" : "8.1.0.3446",
+  "serverRevision" : "e6e739552310"
+}
