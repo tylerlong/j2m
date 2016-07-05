@@ -1,6 +1,6 @@
 const ChangeCase = require('change-case');
 const deepmerge = require('deepmerge');
-const StringHelper = require('./helpers/string');
+const StringHelper = require('./string');
 
 
 const getType = (key, value) => {

@@ -11,8 +11,6 @@ Multiple json files will be deep-merged into one json file before processing.
 
 ## todo
 
-1. auto generate test case
-    1. deserialize and compare the values
 1. auto test upon saving
     1. gulp
 1. best practice to write documentation
