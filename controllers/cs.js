@@ -25,7 +25,7 @@ nunjucks.addFilter('csharp_name', (name) => {
 });
 
 const render = (name, json) => {
-  const cls = inspector.get_class(name, json);
+  const cls = inspector.getClass(name, json);
   let model = nunjucks.render('cs/index.cs', { cls });
   model = model.replace(/ +$/gm, ''); // trim blank lines
   model = model.trim();
