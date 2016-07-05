@@ -3,13 +3,14 @@ const path = require('path');
 const deepmerge = require('deepmerge');
 
 
-const JsonHelper = {
-  readFile: (file) => JSON.parse(fs.readFileSync(file, 'utf8')),
-  readFolder: (folder) => fs.readdirSync(folder)
-    .filter((file) => path.extname(file) === '.json')
-    .map((file) => JsonHelper.readFile(path.join(folder, file)))
-    .reduce((prev, data) => deepmerge(prev, data), {}),
-};
+const readFile = (file) => JSON.parse(fs.readFileSync(file, 'utf8'));
+
+const readFiles = (files) => files.map((file) => readFile(file))
+  .reduce((prev, data) => deepmerge(prev, data), {});
+
+const readFolder = (folder) => readFiles(fs.readdirSync(folder)
+  .filter((file) => path.extname(file) === '.json')
+  .map((file) => path.join(folder, file)));
 
 
-module.exports = JsonHelper;
+module.exports = { readFile, readFiles, readFolder };
