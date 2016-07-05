@@ -1,11 +1,12 @@
 {
   "name": "json2model",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Generate models according to json data.",
   "main": "j2m.js",
   "dependencies": {
     "change-case": "^3.0.0",
     "commander": "^2.9.0",
+    "curry": "^1.2.0",
     "deepmerge": "^0.2.10",
     "nunjucks": "^2.4.2",
     "pluralize": "^3.0.0"
