@@ -50,7 +50,7 @@ j2m -l cs -n account -j test/fixtures/json/account/130829004.json
 
 ```javascript
 const JsonHelper = require('json2model/helpers/json');
-const json = JsonHelper.readFile('account.json')
+const json = JsonHelper.readFile('account.json');
 // Or read multiple json files: const json = JsonHelper.readFiles(['account1.json', 'account2.json']);
 // Or read from folder: const json = JsonHelper.readFolder('./account/');
 const LanguageController = require('json2model/controllers/cs'); // language is C#

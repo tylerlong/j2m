@@ -1,3 +1,5 @@
 {
-  "name": "Tyler Long"
+  "name": "Tyler Long",
+  "scores": [99, 98, 99],
+  "height": 170.55
 }
