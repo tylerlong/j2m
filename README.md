@@ -5,8 +5,8 @@
 Generate model according to json data.
 Why? Once you have the model, you can deserialize json to model.
 
-You can specify either a json file or a folder which contains json files as input.
-Multiple json files inside folder will be deep-merged into one json file before processing.
+You can specify either a json file or multiple json files or a folder which contains one or more json files as input.
+Multiple json files will be deep-merged into one json file before processing.
 
 
 ## todo
@@ -50,7 +50,9 @@ j2m -l cs -n account -j test/fixtures/json/account/130829004.json
 
 ```javascript
 const JsonHelper = require('json2model/helpers/json');
-const json = JsonHelper.readFile('account.json') // Or read from folder: const json = JsonHelper.readFolder('./account/');
+const json = JsonHelper.readFile('account.json')
+// Or read multiple json files: const json = JsonHelper.readFiles(['account1.json', 'account2.json']);
+// Or read from folder: const json = JsonHelper.readFolder('./account/');
 const LanguageController = require('json2model/controllers/cs'); // language is C#
 const model = LanguageController.render('account', json); // model name is "account"
 console.log(model);
