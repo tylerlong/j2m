@@ -1,18 +1,15 @@
 const fs = require('fs');
 const path = require('path');
+const curry = require('curry');
 
 
-// todo: use currying to refactor, check the idea of Ramda
-
-const folderFilter = (folder, filter) => fs.readdirSync(folder)
+const filterFolder = curry((filter, folder) => fs.readdirSync(folder)
   .filter((file) => filter(path.join(folder, file)))
-  .map((file) => [file, path.join(folder, file)]);
+  .map((file) => [file, path.join(folder, file)]));
 
-const listFolders = (folder) => folderFilter(folder,
-  (file) => fs.lstatSync(file).isDirectory());
+const listFolders = filterFolder((file) => fs.lstatSync(file).isDirectory());
 
-const listFiles = (folder) => folderFilter(folder,
-  (file) => fs.lstatSync(file).isFile());
+const listFiles = filterFolder((file) => fs.lstatSync(file).isFile());
 
 
 module.exports = { listFolders, listFiles };
