@@ -1,5 +1,5 @@
 const SchemaHelper = require('../helpers/schema');
-const nunjucks = require('../nunjucks');
+const nunjucks = require('../views/nunjucks');
 
 
 nunjucks.addFilter('csharp_type', (type) => {

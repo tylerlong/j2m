@@ -4,7 +4,7 @@ const nunjucks = require('nunjucks');
 const ChangeCase = require('change-case');
 
 
-const viewsPath = path.join(path.dirname(fs.realpathSync(__filename)), 'views');
+const viewsPath = path.dirname(fs.realpathSync(__filename));
 const env = nunjucks.configure(viewsPath, {
   autoescape: false,
   trimBlocks: true,
