@@ -24,15 +24,13 @@ nunjucks.addFilter('csharp_name', (name) => {
   return name;
 });
 
-const CSharpController = {
-  render: (name, json) => {
-    const cls = inspector.get_class(name, json);
-    let model = nunjucks.render('cs/index.cs', { cls });
-    model = model.replace(/ +$/gm, ''); // trim blank lines
-    model = model.trim();
-    return model;
-  },
+const render = (name, json) => {
+  const cls = inspector.get_class(name, json);
+  let model = nunjucks.render('cs/index.cs', { cls });
+  model = model.replace(/ +$/gm, ''); // trim blank lines
+  model = model.trim();
+  return model;
 };
 
 
-module.exports = CSharpController;
+module.exports = { render };

@@ -16,6 +16,7 @@ Multiple json files inside folder will be deep-merged into one json file before 
 1. check style according to http://es6.ruanyifeng.com/#docs/
 1. auto test upon saving
 1. best practice to write documentation
+1. code coverage
 
 
 ## Installation
