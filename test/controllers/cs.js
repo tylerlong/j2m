@@ -1,6 +1,6 @@
 const assert = require('assert');
-const JsonHelper = require('../helpers/json');
-const CSharpController = require('../controllers/cs');
+const JsonHelper = require('../../helpers/json');
+const CSharpController = require('../../controllers/cs');
 
 
 const csharpCode = `

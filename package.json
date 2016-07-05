@@ -1,6 +1,6 @@
 {
   "name": "json2model",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Generate models according to json data.",
   "main": "j2m.js",
   "dependencies": {
@@ -22,7 +22,7 @@
   },
   "scripts": {
     "lint": "eslint .",
-    "unit": "mocha",
+    "unit": "mocha --recursive",
     "demo": "node j2m.js -l cs -n account -f test/fixtures/json/account/",
     "test": "npm run lint && npm run unit",
     "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --ui bdd -R spec -t 5000"

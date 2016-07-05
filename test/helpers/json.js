@@ -1,5 +1,5 @@
 const assert = require('assert');
-const jsonHelper = require('../helpers/json');
+const jsonHelper = require('../../helpers/json');
 
 
 const mergedJson = `

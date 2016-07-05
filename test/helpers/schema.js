@@ -1,5 +1,5 @@
 const assert = require('assert');
-const SchemaHelper = require('../helpers/schema');
+const SchemaHelper = require('../../helpers/schema');
 
 
 describe('inspector', () => {
