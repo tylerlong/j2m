@@ -15,11 +15,17 @@ nunjucks.addFilter('csharp_type', (type) => {
   if (type === 'number[]') {
     return 'double?[]';
   }
+  if (type === 'boolean') {
+    return 'bool';
+  }
   return type;
 });
 nunjucks.addFilter('csharp_name', (name) => {
-  if (name === 'operator') {
+  if (['operator', 'default', 'in', 'enum'].indexOf(name) > -1) {
     return `@${name}`;
+  }
+  if (name.startsWith('$')) {
+    return name.slice(1);
   }
   return name;
 });

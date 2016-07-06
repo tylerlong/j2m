@@ -35,7 +35,7 @@ public partial class Swagger
 
             public class Scope
             {
-                public string default;
+                public string @default;
             }
         }
     }
@@ -82,18 +82,18 @@ public partial class Swagger
         public class AccountId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
-            public string default;
+            public string @default;
         }
 
         public class AnsweringRuleId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -101,8 +101,8 @@ public partial class Swagger
         public class AttachmentId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -110,8 +110,8 @@ public partial class Swagger
         public class BlockedNumberId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -119,8 +119,8 @@ public partial class Swagger
         public class BrandId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -128,8 +128,8 @@ public partial class Swagger
         public class CallLogId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -137,8 +137,8 @@ public partial class Swagger
         public class CompanyPagerId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -146,8 +146,8 @@ public partial class Swagger
         public class ContactId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -155,8 +155,8 @@ public partial class Swagger
         public class CountryId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -164,8 +164,8 @@ public partial class Swagger
         public class CustomDataKey
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -173,8 +173,8 @@ public partial class Swagger
         public class DepartmentId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -182,8 +182,8 @@ public partial class Swagger
         public class DeviceId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -191,18 +191,18 @@ public partial class Swagger
         public class ExtensionId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
-            public string default;
+            public string @default;
         }
 
         public class FaxId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -210,8 +210,8 @@ public partial class Swagger
         public class GroupId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -219,8 +219,8 @@ public partial class Swagger
         public class LanguageId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -228,8 +228,8 @@ public partial class Swagger
         public class LineId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -237,8 +237,8 @@ public partial class Swagger
         public class MessageId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -246,8 +246,8 @@ public partial class Swagger
         public class OrderId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -255,8 +255,8 @@ public partial class Swagger
         public class PhoneNumberId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -264,8 +264,8 @@ public partial class Swagger
         public class RecordingId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -273,8 +273,8 @@ public partial class Swagger
         public class RingoutId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -282,18 +282,18 @@ public partial class Swagger
         public class ScaleSize
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
-            public string[] enum;
+            public string[] @enum;
         }
 
         public class SecretQuestionId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -301,8 +301,8 @@ public partial class Swagger
         public class ServicePlanId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -310,8 +310,8 @@ public partial class Swagger
         public class SmsId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -319,8 +319,8 @@ public partial class Swagger
         public class StateId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -328,8 +328,8 @@ public partial class Swagger
         public class SubscriptionId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -337,8 +337,8 @@ public partial class Swagger
         public class TimezoneId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -346,8 +346,8 @@ public partial class Swagger
         public class UserGroupId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -355,8 +355,8 @@ public partial class Swagger
         public class VerificationCallId
         {
             public string name;
-            public string in;
-            public boolean required;
+            public string @in;
+            public bool required;
             public string type;
             public string description;
         }
@@ -513,7 +513,7 @@ public partial class Swagger
 
                 public class Operator
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class PartnerId
@@ -524,26 +524,26 @@ public partial class Swagger
 
                 public class ServiceInfo
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class SetupWizardState
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Status
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class StatusInfo
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -639,7 +639,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Name
@@ -656,7 +656,7 @@ public partial class Swagger
 
                 public class Schedule
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class CalledNumber
@@ -667,7 +667,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -679,7 +679,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -687,22 +687,22 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Forwarding
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class UnconditionalForwarding
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Voicemail
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -801,7 +801,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Duration
@@ -814,7 +814,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -882,7 +882,7 @@ public partial class Swagger
 
                 public class HomeCountry
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -943,7 +943,7 @@ public partial class Swagger
 
                 public class WeeklyRange
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -988,40 +988,40 @@ public partial class Swagger
 
                 public class From
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class To
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Type
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Direction
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Action
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Result
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class StartTime
@@ -1039,7 +1039,7 @@ public partial class Swagger
 
                 public class Recording
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -1087,40 +1087,40 @@ public partial class Swagger
 
                 public class From
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class To
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Type
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Direction
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Action
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Result
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class StartTime
@@ -1138,7 +1138,7 @@ public partial class Swagger
 
                 public class Recording
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class LastModifiedTime
@@ -1152,7 +1152,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Leg
@@ -1163,7 +1163,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -1215,7 +1215,7 @@ public partial class Swagger
             public class Property
             {
                 public PhoneNumber phoneNumber;
-                public Default default;
+                public Default @default;
 
                 public class PhoneNumber
                 {
@@ -1297,7 +1297,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -1311,14 +1311,14 @@ public partial class Swagger
             public class Property
             {
                 public Country country;
-                public Default default;
+                public Default @default;
                 public HasGreeting hasGreeting;
                 public Location location;
                 public PhoneNumber phoneNumber;
 
                 public class Country
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Default
@@ -1490,7 +1490,7 @@ public partial class Swagger
 
                 public class BusinessAddress
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -1545,7 +1545,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Encryption
@@ -1698,7 +1698,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Name
@@ -1721,27 +1721,27 @@ public partial class Swagger
 
                 public class Model
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Extension
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class EmergencyServiceAddress
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class PhoneLine
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Shipping
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class BoxBillingId
@@ -1887,12 +1887,12 @@ public partial class Swagger
 
                 public class Contact
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Department
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class ExtensionNumber
@@ -1915,12 +1915,12 @@ public partial class Swagger
 
                 public class Permission
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class ProfileImage
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Reference
@@ -1931,13 +1931,13 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
                 public class RegionalSetting
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class ServiceFeature
@@ -1948,7 +1948,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -1956,26 +1956,26 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Status
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class StatusInfo
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Type
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -1994,19 +1994,19 @@ public partial class Swagger
 
                 public class Contact
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class RegionalSetting
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class SetupWizardState
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Department
@@ -2031,22 +2031,22 @@ public partial class Swagger
 
                 public class Timezone
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Language
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class GreetingLanguage
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class FormattingLocale
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -2174,12 +2174,12 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Contact
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -2229,12 +2229,12 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class StatusInfo
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -2251,12 +2251,12 @@ public partial class Swagger
 
                 public class Admin
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class InternationalCalling
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -2358,7 +2358,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Rule
@@ -2369,7 +2369,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -2417,7 +2417,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class FlipNumber
@@ -2514,7 +2514,7 @@ public partial class Swagger
 
                 public class Extension
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class CallPickup
@@ -2565,7 +2565,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -2729,14 +2729,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Direction
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Duration
@@ -2747,7 +2747,7 @@ public partial class Swagger
 
                 public class Extension
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class LegType
@@ -2767,36 +2767,36 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Result
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class From
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class To
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Transport
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Recording
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -2981,7 +2981,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Password
@@ -2994,17 +2994,17 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Link
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Schedule
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class AllowJoinBeforeHost
@@ -3065,7 +3065,7 @@ public partial class Swagger
 
                 public class TimeZone
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -3116,7 +3116,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class ContentType
@@ -3183,7 +3183,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -3191,7 +3191,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class ConversationId
@@ -3218,7 +3218,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class FaxPageCount
@@ -3231,12 +3231,12 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class From
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class LastModifiedTime
@@ -3250,7 +3250,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class PgToDepartment
@@ -3263,14 +3263,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class ReadStatus
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class SmsDeliveryTime
@@ -3300,7 +3300,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -3308,14 +3308,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class VmTranscriptionStatus
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -3350,14 +3350,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class FaxErrorCode
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Name
@@ -3405,7 +3405,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -3584,7 +3584,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -3703,7 +3703,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class FirstName
@@ -3834,17 +3834,17 @@ public partial class Swagger
 
                 public class HomeAddress
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class BusinessAddress
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class OtherAddress
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Birthday
@@ -3882,12 +3882,12 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class PhoneInfo
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -3916,7 +3916,7 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Location
@@ -3929,7 +3929,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class PhoneNumber
@@ -3948,14 +3948,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class UsageType
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -3986,12 +3986,12 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Extension
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Feature
@@ -4016,7 +4016,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class PhoneNumber
@@ -4035,14 +4035,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class UsageType
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -4119,12 +4119,12 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Extension
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Message
@@ -4143,7 +4143,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class RingOnMonitoredCall
@@ -4156,14 +4156,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class UserStatus
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -4329,7 +4329,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class ContentUri
@@ -4360,7 +4360,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -4380,27 +4380,27 @@ public partial class Swagger
 
                 public class HomeCountry
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Timezone
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Language
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class GreetingLanguage
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class FormattingLocale
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -4473,14 +4473,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Error
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -4561,7 +4561,7 @@ public partial class Swagger
 
                 public class Status
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -4581,21 +4581,21 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class CallerStatus
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class CalleeStatus
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -4631,7 +4631,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -4688,19 +4688,19 @@ public partial class Swagger
 
                 public class WeeklyRange
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Range
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Ref
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -4731,7 +4731,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -4794,22 +4794,22 @@ public partial class Swagger
 
                 public class BillingPlan
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class Brand
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class ServicePlan
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class TargetServicePlan
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -4921,7 +4921,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Carrier
@@ -4944,7 +4944,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -4956,7 +4956,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -4976,14 +4976,14 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Name
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -5015,7 +5015,7 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string $ref;
+                    public string ref;
                 }
 
                 public class IsoCode
@@ -5076,7 +5076,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
             }
         }
@@ -5095,7 +5095,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class Encryption
@@ -5163,7 +5163,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class CreationTime
@@ -5175,7 +5175,7 @@ public partial class Swagger
 
                 public class DeliveryMode
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -5195,7 +5195,7 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                 }
 
                 public class SyncToken
@@ -5374,7 +5374,7 @@ public partial class Swagger
 
                 public class Recipient
                 {
-                    public string $ref;
+                    public string ref;
                 }
             }
         }
@@ -5402,7 +5402,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -5414,7 +5414,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -5426,7 +5426,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -5438,7 +5438,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -5450,7 +5450,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -5462,7 +5462,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
 
@@ -5474,7 +5474,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string $ref;
+                        public string ref;
                     }
                 }
             }
@@ -5536,7 +5536,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5545,7 +5545,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -5564,7 +5564,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5607,7 +5607,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -5663,7 +5663,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5674,7 +5674,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -5709,7 +5709,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5787,7 +5787,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -5870,7 +5870,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5879,7 +5879,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -5898,7 +5898,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5907,7 +5907,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -5915,7 +5915,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -5932,7 +5932,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -5958,18 +5958,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -5980,15 +5980,15 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6004,7 +6004,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6043,7 +6043,7 @@ public partial class Swagger
 
                                 public class BusinessAddress
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6053,7 +6053,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6070,7 +6070,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6096,18 +6096,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6119,15 +6119,15 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
-                    public string[] enum;
+                    public string @in;
+                    public string[] @enum;
                     public string format;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6143,7 +6143,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6152,7 +6152,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6160,7 +6160,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6177,7 +6177,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6203,18 +6203,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6226,14 +6226,14 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
-                    public string[] enum;
+                    public string @in;
+                    public string[] @enum;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6249,7 +6249,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6258,7 +6258,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6266,7 +6266,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6283,7 +6283,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6309,18 +6309,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6331,15 +6331,15 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6356,7 +6356,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6382,18 +6382,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6405,15 +6405,15 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
-                    public string[] enum;
+                    public string @in;
+                    public string[] @enum;
                     public string format;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6429,7 +6429,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6438,7 +6438,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6446,7 +6446,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6463,7 +6463,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6472,7 +6472,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6480,7 +6480,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -6497,7 +6497,7 @@ public partial class Swagger
 
                             public class From
                             {
-                                public string $ref;
+                                public string ref;
                             }
 
                             public class ReplyOn
@@ -6520,7 +6520,7 @@ public partial class Swagger
 
                                 public class Item
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6530,7 +6530,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6547,7 +6547,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6556,7 +6556,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6564,7 +6564,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -6589,7 +6589,7 @@ public partial class Swagger
 
                                 public class Item
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
 
@@ -6597,7 +6597,7 @@ public partial class Swagger
                             {
                                 public string type;
                                 public string description;
-                                public string[] enum;
+                                public string[] @enum;
                             }
 
                             public class SendTime
@@ -6631,7 +6631,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6648,7 +6648,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6674,18 +6674,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6697,13 +6697,13 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6720,7 +6720,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6746,18 +6746,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6768,16 +6768,16 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                     public string name;
-                    public string in;
+                    public string @in;
                     public string format;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6796,7 +6796,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6809,7 +6809,7 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                     public string format;
                 }
             }
@@ -6821,7 +6821,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6830,7 +6830,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6844,7 +6844,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6853,7 +6853,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -6861,7 +6861,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -6877,7 +6877,7 @@ public partial class Swagger
                             {
                                 public string type;
                                 public string description;
-                                public string[] enum;
+                                public string[] @enum;
                             }
                         }
                     }
@@ -6886,7 +6886,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6902,7 +6902,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6920,7 +6920,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -6937,7 +6937,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -6963,18 +6963,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -6985,15 +6985,15 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7009,7 +7009,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7018,7 +7018,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7026,7 +7026,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7043,7 +7043,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7052,7 +7052,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7060,7 +7060,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -7078,17 +7078,17 @@ public partial class Swagger
 
                             public class From
                             {
-                                public string $ref;
+                                public string ref;
                             }
 
                             public class To
                             {
-                                public string $ref;
+                                public string ref;
                             }
 
                             public class CallerId
                             {
-                                public string $ref;
+                                public string ref;
                             }
 
                             public class PlayPrompt
@@ -7099,7 +7099,7 @@ public partial class Swagger
 
                             public class Country
                             {
-                                public string $ref;
+                                public string ref;
                             }
                         }
                     }
@@ -7108,7 +7108,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7125,7 +7125,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7141,7 +7141,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7150,7 +7150,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7158,7 +7158,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7175,7 +7175,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7184,7 +7184,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7192,7 +7192,7 @@ public partial class Swagger
                 public class Parameter
                 {
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -7208,7 +7208,7 @@ public partial class Swagger
 
                             public class From
                             {
-                                public string $ref;
+                                public string ref;
                             }
 
                             public class To
@@ -7219,7 +7219,7 @@ public partial class Swagger
 
                                 public class Item
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
 
@@ -7235,7 +7235,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7252,7 +7252,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7278,18 +7278,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -7301,14 +7301,14 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
-                    public string[] enum;
+                    public string @in;
+                    public string[] @enum;
                 }
             }
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7324,7 +7324,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7333,7 +7333,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7341,7 +7341,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7357,7 +7357,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7407,7 +7407,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7423,7 +7423,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7441,7 +7441,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7457,7 +7457,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7483,18 +7483,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -7506,7 +7506,7 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
         }
@@ -7523,7 +7523,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7532,7 +7532,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7540,7 +7540,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7555,7 +7555,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7581,18 +7581,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -7613,7 +7613,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7622,7 +7622,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7630,7 +7630,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7646,7 +7646,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7672,18 +7672,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -7694,9 +7694,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public string[] enum;
+                    public string[] @enum;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
         }
@@ -7713,7 +7713,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7739,18 +7739,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -7762,7 +7762,7 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
         }
@@ -7779,7 +7779,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7788,7 +7788,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7796,7 +7796,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7812,7 +7812,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7838,18 +7838,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string $ref;
+                                        public string ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string $ref;
+                                    public string ref;
                                 }
                             }
                         }
@@ -7861,7 +7861,7 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                 }
             }
         }
@@ -7878,7 +7878,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7887,7 +7887,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7895,7 +7895,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
 
@@ -7911,7 +7911,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7920,7 +7920,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -7930,7 +7930,7 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -7957,7 +7957,7 @@ public partial class Swagger
 
                             public class DeliveryMode
                             {
-                                public string $ref;
+                                public string ref;
                             }
                         }
                     }
@@ -7979,7 +7979,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -7995,7 +7995,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -8004,7 +8004,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -8018,7 +8018,7 @@ public partial class Swagger
 
                 public class Response
                 {
-                    public Default default;
+                    public Default @default;
 
                     public class Default
                     {
@@ -8027,7 +8027,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string $ref;
+                            public string ref;
                         }
                     }
                 }
@@ -8037,7 +8037,7 @@ public partial class Swagger
                     public string type;
                     public string description;
                     public string name;
-                    public string in;
+                    public string @in;
                     public Schema schema;
 
                     public class Schema
@@ -8067,7 +8067,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string $ref;
+                public string ref;
             }
         }
     }
