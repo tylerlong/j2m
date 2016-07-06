@@ -25,7 +25,8 @@
     "unit": "mocha --recursive",
     "demo": "node j2m.js -l cs -n account -f test/fixtures/json/account/",
     "test": "npm run lint && npm run unit",
-    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --recursive --ui bdd -R spec -t 5000"
+    "coverage": "./node_modules/istanbul/lib/cli.js cover ./node_modules/mocha/bin/_mocha -- --recursive --ui bdd -R spec -t 5000",
+    "prepublish": "npm test && npm run coverage"
   },
   "bin": {
     "j2m": "j2m.js"
