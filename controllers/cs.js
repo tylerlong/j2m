@@ -1,5 +1,6 @@
 const { getClass } = require('../helpers/schema');
 const nunjucks = require('../views/nunjucks');
+const { camelCase } = require('change-case');
 
 
 nunjucks.addFilter('csharp_type', (type) => {
@@ -25,9 +26,9 @@ nunjucks.addFilter('csharp_name', (name) => {
     return `@${name}`;
   }
   if (name.startsWith('$')) {
-    return name.slice(1);
+    return `@${name.slice(1)}`;
   }
-  return name;
+  return camelCase(name);
 });
 
 const render = (name, json) => {

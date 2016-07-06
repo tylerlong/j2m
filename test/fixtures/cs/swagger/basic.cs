@@ -364,117 +364,117 @@ public partial class Swagger
 
     public class Definition
     {
-        public AccountInfo AccountInfo;
-        public AccountLimit AccountLimits;
-        public AddonInfo AddonInfo;
-        public AnsweringRuleInfo AnsweringRuleInfo;
-        public AnsweringRuleInfoCalleeInfo AnsweringRuleInfo.CalleeInfo;
-        public AnsweringRuleInfoCallerInfo AnsweringRuleInfo.CallerInfo;
-        public AttachmentInfo AttachmentInfo;
-        public BillingPlanInfo BillingPlanInfo;
-        public BlockedNumberInfo BlockedNumberInfo;
-        public BrandInfo BrandInfo;
-        public BusinessAddressInfo BusinessAddressInfo;
-        public BusinessHourScheduleInfo BusinessHour.ScheduleInfo;
-        public CallLogInfo CallLogInfo;
-        public CallLogRecord CallLogRecord;
-        public CallerInfo CallerInfo;
-        public ConferencingRequestPhoneNumber Conferencing.Request.PhoneNumber;
-        public ConferencingInfo ConferencingInfo;
-        public ConferencingInfoPhoneNumberInfo ConferencingInfo.PhoneNumberInfo;
-        public ConferencingInfoPhoneNumberInfoCountryInfo ConferencingInfo.PhoneNumberInfo.CountryInfo;
-        public ContactAddressInfo ContactAddressInfo;
-        public ContactInfo ContactInfo;
-        public CountryInfo CountryInfo;
-        public DeliveryMode DeliveryMode;
-        public DepartmentResponseExtensionInfo Department.Response.ExtensionInfo;
-        public DepartmentInfo DepartmentInfo;
-        public DeviceInfo DeviceInfo;
-        public DeviceInfoExtensionInfo DeviceInfo.ExtensionInfo;
-        public EmergencyAddressInfo EmergencyAddressInfo;
-        public ExtensionInfo ExtensionInfo;
-        public ExtensionInfoRequestContactInfo ExtensionInfo.Request.ContactInfo;
-        public ExtensionInfoRequestContactInfoRegionalSetting ExtensionInfo.Request.ContactInfo.RegionalSettings;
-        public ExtensionInfoRequestContactInfoRegionalSettingsFormattingLocale ExtensionInfo.Request.ContactInfo.RegionalSettings.FormattingLocale;
-        public ExtensionInfoRequestContactInfoRegionalSettingsGreetingLanguage ExtensionInfo.Request.ContactInfo.RegionalSettings.GreetingLanguage;
-        public ExtensionInfoRequestContactInfoRegionalSettingsLanguage ExtensionInfo.Request.ContactInfo.RegionalSettings.Language;
-        public ExtensionInfoRequestContactInfoRegionalSettingsTimezone ExtensionInfo.Request.ContactInfo.RegionalSettings.Timezone;
-        public ExtensionInfoRequestPartnerId ExtensionInfo.Request.PartnerId;
-        public ExtensionInfoRequestPasswordPin ExtensionInfo.Request.PasswordPIN;
-        public ExtensionInfoRequestProvision ExtensionInfo.Request.Provision;
-        public ExtensionInfoRequestProvisionContactInfo ExtensionInfo.Request.Provision.ContactInfo;
-        public ExtensionInfoRequestStatusInfo ExtensionInfo.Request.StatusInfo;
-        public ExtensionPermission ExtensionPermissions;
-        public ExtensionServiceFeatureInfo ExtensionServiceFeatureInfo;
-        public FormattingLocaleInfo FormattingLocaleInfo;
-        public ForwardingInfo ForwardingInfo;
-        public ForwardingNumberInfo ForwardingNumberInfo;
-        public FullCountryInfo FullCountryInfo;
-        public GrantInfo GrantInfo;
-        public GrantInfoExtensionInfo GrantInfo.ExtensionInfo;
-        public GreetingLanguageInfo GreetingLanguageInfo;
-        public GroupInfo GroupInfo;
-        public LanguageInfo LanguageInfo;
-        public LegInfo LegInfo;
-        public LegInfoExtensionInfo LegInfo.ExtensionInfo;
-        public LinksInfo LinksInfo;
-        public LocationInfo LocationInfo;
-        public LookUpPhoneNumberPhoneNumberInfo LookUpPhoneNumber.PhoneNumberInfo;
-        public MeetingInfo MeetingInfo;
-        public MeetingScheduleInfo MeetingScheduleInfo;
-        public MeetingScheduleInfoTimezoneInfo MeetingScheduleInfo.TimezoneInfo;
-        public MessageAttachmentInfo MessageAttachmentInfo;
-        public MessageInfo MessageInfo;
-        public MessageInfoCallerInfo MessageInfo.CallerInfo;
-        public ModelInfo ModelInfo;
-        public NavigationInfo NavigationInfo;
-        public PagingInfo PagingInfo;
-        public ParsePhoneNumberCountryInfo ParsePhoneNumber.CountryInfo;
-        public ParsePhoneNumberPhoneNumberInfo ParsePhoneNumber.PhoneNumberInfo;
-        public PermissionInfo PermissionInfo;
-        public PersonalContactInfo PersonalContactInfo;
-        public PhoneLinesInfo PhoneLinesInfo;
-        public PhoneLinesInfoPhoneNumberInfo PhoneLinesInfo.PhoneNumberInfo;
-        public PhoneNumberInfo PhoneNumberInfo;
-        public PhoneNumberInfoExtensionInfo PhoneNumberInfo.ExtensionInfo;
-        public PresenceInfo PresenceInfo;
-        public PresenceInfoExtensionInfo PresenceInfo.ExtensionInfo;
-        public ProfileImageInfo ProfileImageInfo;
-        public RangesInfo RangesInfo;
-        public RecipientInfo RecipientInfo;
-        public RecordingInfo RecordingInfo;
-        public ReferenceInfo ReferenceInfo;
-        public RegionalSetting RegionalSettings;
-        public ReservePhoneNumberRequestReserveRecord ReservePhoneNumber.Request.ReserveRecord;
-        public ReservePhoneNumberResponseReserveRecord ReservePhoneNumber.Response.ReserveRecord;
-        public RingOutRequestCountryInfo RingOut.Request.CountryInfo;
-        public RingOutRequestFrom RingOut.Request.From;
-        public RingOutRequestTo RingOut.Request.To;
-        public RingOutInfo RingOutInfo;
-        public RingOutStatusInfo RingOutStatusInfo;
-        public RuleInfo RuleInfo;
-        public RuleInfoForwardingNumberInfo RuleInfo.ForwardingNumberInfo;
-        public ScheduleInfo ScheduleInfo;
-        public ServerInfo ServerInfo;
-        public ServiceFeatureInfo ServiceFeatureInfo;
-        public ServiceInfo ServiceInfo;
-        public ServicePlanInfo ServicePlanInfo;
-        public ShippingAddress ShippingAddress;
-        public ShippingInfo ShippingInfo;
-        public ShippingMethod ShippingMethod;
-        public StateInfo StateInfo;
-        public StateInfoCountryInfo StateInfo.CountryInfo;
-        public StatusInfo StatusInfo;
-        public SubscriptionRequestDeliveryMode Subscription.Request.DeliveryMode;
-        public SubscriptionInfo SubscriptionInfo;
-        public SyncInfo SyncInfo;
-        public TargetServicePlanInfo TargetServicePlanInfo;
-        public TimeInterval TimeInterval;
-        public TimezoneInfo TimezoneInfo;
-        public UnconditionalForwardingInfo UnconditionalForwardingInfo;
-        public VersionInfo VersionInfo;
-        public VoicemailInfo VoicemailInfo;
-        public WeeklyScheduleInfo WeeklyScheduleInfo;
+        public AccountInfo accountInfo;
+        public AccountLimit accountLimits;
+        public AddonInfo addonInfo;
+        public AnsweringRuleInfo answeringRuleInfo;
+        public AnsweringRuleInfoCalleeInfo answeringRuleInfoCalleeInfo;
+        public AnsweringRuleInfoCallerInfo answeringRuleInfoCallerInfo;
+        public AttachmentInfo attachmentInfo;
+        public BillingPlanInfo billingPlanInfo;
+        public BlockedNumberInfo blockedNumberInfo;
+        public BrandInfo brandInfo;
+        public BusinessAddressInfo businessAddressInfo;
+        public BusinessHourScheduleInfo businessHourScheduleInfo;
+        public CallLogInfo callLogInfo;
+        public CallLogRecord callLogRecord;
+        public CallerInfo callerInfo;
+        public ConferencingRequestPhoneNumber conferencingRequestPhoneNumber;
+        public ConferencingInfo conferencingInfo;
+        public ConferencingInfoPhoneNumberInfo conferencingInfoPhoneNumberInfo;
+        public ConferencingInfoPhoneNumberInfoCountryInfo conferencingInfoPhoneNumberInfoCountryInfo;
+        public ContactAddressInfo contactAddressInfo;
+        public ContactInfo contactInfo;
+        public CountryInfo countryInfo;
+        public DeliveryMode deliveryMode;
+        public DepartmentResponseExtensionInfo departmentResponseExtensionInfo;
+        public DepartmentInfo departmentInfo;
+        public DeviceInfo deviceInfo;
+        public DeviceInfoExtensionInfo deviceInfoExtensionInfo;
+        public EmergencyAddressInfo emergencyAddressInfo;
+        public ExtensionInfo extensionInfo;
+        public ExtensionInfoRequestContactInfo extensionInfoRequestContactInfo;
+        public ExtensionInfoRequestContactInfoRegionalSetting extensionInfoRequestContactInfoRegionalSettings;
+        public ExtensionInfoRequestContactInfoRegionalSettingsFormattingLocale extensionInfoRequestContactInfoRegionalSettingsFormattingLocale;
+        public ExtensionInfoRequestContactInfoRegionalSettingsGreetingLanguage extensionInfoRequestContactInfoRegionalSettingsGreetingLanguage;
+        public ExtensionInfoRequestContactInfoRegionalSettingsLanguage extensionInfoRequestContactInfoRegionalSettingsLanguage;
+        public ExtensionInfoRequestContactInfoRegionalSettingsTimezone extensionInfoRequestContactInfoRegionalSettingsTimezone;
+        public ExtensionInfoRequestPartnerId extensionInfoRequestPartnerId;
+        public ExtensionInfoRequestPasswordPin extensionInfoRequestPasswordPin;
+        public ExtensionInfoRequestProvision extensionInfoRequestProvision;
+        public ExtensionInfoRequestProvisionContactInfo extensionInfoRequestProvisionContactInfo;
+        public ExtensionInfoRequestStatusInfo extensionInfoRequestStatusInfo;
+        public ExtensionPermission extensionPermissions;
+        public ExtensionServiceFeatureInfo extensionServiceFeatureInfo;
+        public FormattingLocaleInfo formattingLocaleInfo;
+        public ForwardingInfo forwardingInfo;
+        public ForwardingNumberInfo forwardingNumberInfo;
+        public FullCountryInfo fullCountryInfo;
+        public GrantInfo grantInfo;
+        public GrantInfoExtensionInfo grantInfoExtensionInfo;
+        public GreetingLanguageInfo greetingLanguageInfo;
+        public GroupInfo groupInfo;
+        public LanguageInfo languageInfo;
+        public LegInfo legInfo;
+        public LegInfoExtensionInfo legInfoExtensionInfo;
+        public LinksInfo linksInfo;
+        public LocationInfo locationInfo;
+        public LookUpPhoneNumberPhoneNumberInfo lookUpPhoneNumberPhoneNumberInfo;
+        public MeetingInfo meetingInfo;
+        public MeetingScheduleInfo meetingScheduleInfo;
+        public MeetingScheduleInfoTimezoneInfo meetingScheduleInfoTimezoneInfo;
+        public MessageAttachmentInfo messageAttachmentInfo;
+        public MessageInfo messageInfo;
+        public MessageInfoCallerInfo messageInfoCallerInfo;
+        public ModelInfo modelInfo;
+        public NavigationInfo navigationInfo;
+        public PagingInfo pagingInfo;
+        public ParsePhoneNumberCountryInfo parsePhoneNumberCountryInfo;
+        public ParsePhoneNumberPhoneNumberInfo parsePhoneNumberPhoneNumberInfo;
+        public PermissionInfo permissionInfo;
+        public PersonalContactInfo personalContactInfo;
+        public PhoneLinesInfo phoneLinesInfo;
+        public PhoneLinesInfoPhoneNumberInfo phoneLinesInfoPhoneNumberInfo;
+        public PhoneNumberInfo phoneNumberInfo;
+        public PhoneNumberInfoExtensionInfo phoneNumberInfoExtensionInfo;
+        public PresenceInfo presenceInfo;
+        public PresenceInfoExtensionInfo presenceInfoExtensionInfo;
+        public ProfileImageInfo profileImageInfo;
+        public RangesInfo rangesInfo;
+        public RecipientInfo recipientInfo;
+        public RecordingInfo recordingInfo;
+        public ReferenceInfo referenceInfo;
+        public RegionalSetting regionalSettings;
+        public ReservePhoneNumberRequestReserveRecord reservePhoneNumberRequestReserveRecord;
+        public ReservePhoneNumberResponseReserveRecord reservePhoneNumberResponseReserveRecord;
+        public RingOutRequestCountryInfo ringOutRequestCountryInfo;
+        public RingOutRequestFrom ringOutRequestFrom;
+        public RingOutRequestTo ringOutRequestTo;
+        public RingOutInfo ringOutInfo;
+        public RingOutStatusInfo ringOutStatusInfo;
+        public RuleInfo ruleInfo;
+        public RuleInfoForwardingNumberInfo ruleInfoForwardingNumberInfo;
+        public ScheduleInfo scheduleInfo;
+        public ServerInfo serverInfo;
+        public ServiceFeatureInfo serviceFeatureInfo;
+        public ServiceInfo serviceInfo;
+        public ServicePlanInfo servicePlanInfo;
+        public ShippingAddress shippingAddress;
+        public ShippingInfo shippingInfo;
+        public ShippingMethod shippingMethod;
+        public StateInfo stateInfo;
+        public StateInfoCountryInfo stateInfoCountryInfo;
+        public StatusInfo statusInfo;
+        public SubscriptionRequestDeliveryMode subscriptionRequestDeliveryMode;
+        public SubscriptionInfo subscriptionInfo;
+        public SyncInfo syncInfo;
+        public TargetServicePlanInfo targetServicePlanInfo;
+        public TimeInterval timeInterval;
+        public TimezoneInfo timezoneInfo;
+        public UnconditionalForwardingInfo unconditionalForwardingInfo;
+        public VersionInfo versionInfo;
+        public VoicemailInfo voicemailInfo;
+        public WeeklyScheduleInfo weeklyScheduleInfo;
 
         public class AccountInfo
         {
@@ -513,7 +513,7 @@ public partial class Swagger
 
                 public class Operator
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class PartnerId
@@ -524,7 +524,7 @@ public partial class Swagger
 
                 public class ServiceInfo
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class SetupWizardState
@@ -543,7 +543,7 @@ public partial class Swagger
 
                 public class StatusInfo
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -656,7 +656,7 @@ public partial class Swagger
 
                 public class Schedule
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class CalledNumber
@@ -667,7 +667,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -679,7 +679,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -692,17 +692,17 @@ public partial class Swagger
 
                 public class Forwarding
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class UnconditionalForwarding
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Voicemail
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -882,7 +882,7 @@ public partial class Swagger
 
                 public class HomeCountry
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -943,7 +943,7 @@ public partial class Swagger
 
                 public class WeeklyRange
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -988,12 +988,12 @@ public partial class Swagger
 
                 public class From
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class To
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Type
@@ -1039,7 +1039,7 @@ public partial class Swagger
 
                 public class Recording
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -1087,12 +1087,12 @@ public partial class Swagger
 
                 public class From
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class To
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Type
@@ -1138,7 +1138,7 @@ public partial class Swagger
 
                 public class Recording
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class LastModifiedTime
@@ -1163,7 +1163,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -1297,7 +1297,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -1318,7 +1318,7 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Default
@@ -1490,7 +1490,7 @@ public partial class Swagger
 
                 public class BusinessAddress
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -1721,27 +1721,27 @@ public partial class Swagger
 
                 public class Model
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Extension
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class EmergencyServiceAddress
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class PhoneLine
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Shipping
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class BoxBillingId
@@ -1887,12 +1887,12 @@ public partial class Swagger
 
                 public class Contact
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Department
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class ExtensionNumber
@@ -1915,12 +1915,12 @@ public partial class Swagger
 
                 public class Permission
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class ProfileImage
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Reference
@@ -1931,13 +1931,13 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
                 public class RegionalSetting
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class ServiceFeature
@@ -1948,7 +1948,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -1968,7 +1968,7 @@ public partial class Swagger
 
                 public class StatusInfo
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Type
@@ -1994,12 +1994,12 @@ public partial class Swagger
 
                 public class Contact
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class RegionalSetting
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class SetupWizardState
@@ -2031,22 +2031,22 @@ public partial class Swagger
 
                 public class Timezone
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Language
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class GreetingLanguage
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class FormattingLocale
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -2179,7 +2179,7 @@ public partial class Swagger
 
                 public class Contact
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -2234,7 +2234,7 @@ public partial class Swagger
 
                 public class StatusInfo
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -2251,12 +2251,12 @@ public partial class Swagger
 
                 public class Admin
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class InternationalCalling
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -2369,7 +2369,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -2514,7 +2514,7 @@ public partial class Swagger
 
                 public class Extension
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class CallPickup
@@ -2747,7 +2747,7 @@ public partial class Swagger
 
                 public class Extension
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class LegType
@@ -2779,12 +2779,12 @@ public partial class Swagger
 
                 public class From
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class To
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Transport
@@ -2796,7 +2796,7 @@ public partial class Swagger
 
                 public class Recording
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -2999,12 +2999,12 @@ public partial class Swagger
 
                 public class Link
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Schedule
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class AllowJoinBeforeHost
@@ -3065,7 +3065,7 @@ public partial class Swagger
 
                 public class TimeZone
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -3183,7 +3183,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -3236,7 +3236,7 @@ public partial class Swagger
 
                 public class From
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class LastModifiedTime
@@ -3300,7 +3300,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -3405,7 +3405,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -3584,7 +3584,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -3834,17 +3834,17 @@ public partial class Swagger
 
                 public class HomeAddress
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class BusinessAddress
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class OtherAddress
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Birthday
@@ -3887,7 +3887,7 @@ public partial class Swagger
 
                 public class PhoneInfo
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -3916,7 +3916,7 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Location
@@ -3986,12 +3986,12 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Extension
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Feature
@@ -4124,7 +4124,7 @@ public partial class Swagger
 
                 public class Extension
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Message
@@ -4380,27 +4380,27 @@ public partial class Swagger
 
                 public class HomeCountry
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Timezone
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Language
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class GreetingLanguage
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class FormattingLocale
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -4561,7 +4561,7 @@ public partial class Swagger
 
                 public class Status
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -4631,7 +4631,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -4688,12 +4688,12 @@ public partial class Swagger
 
                 public class WeeklyRange
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Range
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Ref
@@ -4731,7 +4731,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -4794,22 +4794,22 @@ public partial class Swagger
 
                 public class BillingPlan
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class Brand
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class ServicePlan
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class TargetServicePlan
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -4944,7 +4944,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -4956,7 +4956,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -5015,7 +5015,7 @@ public partial class Swagger
 
                 public class Country
                 {
-                    public string ref;
+                    public string @ref;
                 }
 
                 public class IsoCode
@@ -5175,7 +5175,7 @@ public partial class Swagger
 
                 public class DeliveryMode
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -5374,7 +5374,7 @@ public partial class Swagger
 
                 public class Recipient
                 {
-                    public string ref;
+                    public string @ref;
                 }
             }
         }
@@ -5402,7 +5402,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -5414,7 +5414,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -5426,7 +5426,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -5438,7 +5438,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -5450,7 +5450,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -5462,7 +5462,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
 
@@ -5474,7 +5474,7 @@ public partial class Swagger
 
                     public class Item
                     {
-                        public string ref;
+                        public string @ref;
                     }
                 }
             }
@@ -5483,47 +5483,47 @@ public partial class Swagger
 
     public class Path
     {
-        public Restapi /restapi;
-        public RestapiOauthAuthorize /restapi/oauth/authorize;
-        public RestapiOauthRevoke /restapi/oauth/revoke;
-        public RestapiOauthToken /restapi/oauth/token;
-        public RestapiV1_0 /restapi/v1.0;
-        public RestapiV1_0AccountAccountId /restapi/v1.0/account/{accountId};
-        public RestapiV1_0AccountAccountIdActiveCall /restapi/v1.0/account/{accountId}/active-calls;
-        public RestapiV1_0AccountAccountIdBusinessAddress /restapi/v1.0/account/{accountId}/business-address;
-        public RestapiV1_0AccountAccountIdCallLog /restapi/v1.0/account/{accountId}/call-log;
-        public RestapiV1_0AccountAccountIdCallLogCallLogId /restapi/v1.0/account/{accountId}/call-log/{callLogId};
-        public RestapiV1_0AccountAccountIdExtension /restapi/v1.0/account/{accountId}/extension;
-        public RestapiV1_0AccountAccountIdExtensionExtensionId /restapi/v1.0/account/{accountId}/extension/{extensionId};
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdActiveCall /restapi/v1.0/account/{accountId}/extension/{extensionId}/active-calls;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdCallLog /restapi/v1.0/account/{accountId}/extension/{extensionId}/call-log;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdCallLogCallLogId /restapi/v1.0/account/{accountId}/extension/{extensionId}/call-log/{callLogId};
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdCompanyPager /restapi/v1.0/account/{accountId}/extension/{extensionId}/company-pager;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdFax /restapi/v1.0/account/{accountId}/extension/{extensionId}/fax;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdForwardingNumber /restapi/v1.0/account/{accountId}/extension/{extensionId}/forwarding-number;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdMessageStore /restapi/v1.0/account/{accountId}/extension/{extensionId}/message-store;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdMessageStoreMessageId /restapi/v1.0/account/{accountId}/extension/{extensionId}/message-store/{messageId};
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdMessageStoreMessageIdContentAttachmentId /restapi/v1.0/account/{accountId}/extension/{extensionId}/message-store/{messageId}/content/{attachmentId};
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdPhoneNumber /restapi/v1.0/account/{accountId}/extension/{extensionId}/phone-number;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdPresence /restapi/v1.0/account/{accountId}/extension/{extensionId}/presence;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdRingout /restapi/v1.0/account/{accountId}/extension/{extensionId}/ringout;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdRingoutRingoutId /restapi/v1.0/account/{accountId}/extension/{extensionId}/ringout/{ringoutId};
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdSm /restapi/v1.0/account/{accountId}/extension/{extensionId}/sms;
-        public RestapiV1_0AccountAccountIdPhoneNumber /restapi/v1.0/account/{accountId}/phone-number;
-        public RestapiV1_0AccountAccountIdPhoneNumberPhoneNumberId /restapi/v1.0/account/{accountId}/phone-number/{phoneNumberId};
-        public RestapiV1_0AccountAccountIdRecordingRecordingId /restapi/v1.0/account/{accountId}/recording/{recordingId};
-        public RestapiV1_0AccountAccountIdRecordingRecordingIdContent /restapi/v1.0/account/{accountId}/recording/{recordingId}/content;
-        public RestapiV1_0DictionaryCountry /restapi/v1.0/dictionary/country;
-        public RestapiV1_0DictionaryCountryCountryId /restapi/v1.0/dictionary/country/{countryId};
-        public RestapiV1_0DictionaryLanguage /restapi/v1.0/dictionary/language;
-        public RestapiV1_0DictionaryLanguageLanguageId /restapi/v1.0/dictionary/language/{languageId};
-        public RestapiV1_0DictionaryLocation /restapi/v1.0/dictionary/location;
-        public RestapiV1_0DictionaryState /restapi/v1.0/dictionary/state;
-        public RestapiV1_0DictionaryStateStateId /restapi/v1.0/dictionary/state/{stateId};
-        public RestapiV1_0DictionaryTimezone /restapi/v1.0/dictionary/timezone;
-        public RestapiV1_0DictionaryTimezoneTimezoneId /restapi/v1.0/dictionary/timezone/{timezoneId};
-        public RestapiV1_0Subscription /restapi/v1.0/subscription;
-        public RestapiV1_0SubscriptionSubscriptionId /restapi/v1.0/subscription/{subscriptionId};
+        public Restapi restapi;
+        public RestapiOauthAuthorize restapiOauthAuthorize;
+        public RestapiOauthRevoke restapiOauthRevoke;
+        public RestapiOauthToken restapiOauthToken;
+        public RestapiV1_0 restapiV1_0;
+        public RestapiV1_0AccountAccountId restapiV1_0AccountAccountId;
+        public RestapiV1_0AccountAccountIdActiveCall restapiV1_0AccountAccountIdActiveCalls;
+        public RestapiV1_0AccountAccountIdBusinessAddress restapiV1_0AccountAccountIdBusinessAddress;
+        public RestapiV1_0AccountAccountIdCallLog restapiV1_0AccountAccountIdCallLog;
+        public RestapiV1_0AccountAccountIdCallLogCallLogId restapiV1_0AccountAccountIdCallLogCallLogId;
+        public RestapiV1_0AccountAccountIdExtension restapiV1_0AccountAccountIdExtension;
+        public RestapiV1_0AccountAccountIdExtensionExtensionId restapiV1_0AccountAccountIdExtensionExtensionId;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdActiveCall restapiV1_0AccountAccountIdExtensionExtensionIdActiveCalls;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdCallLog restapiV1_0AccountAccountIdExtensionExtensionIdCallLog;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdCallLogCallLogId restapiV1_0AccountAccountIdExtensionExtensionIdCallLogCallLogId;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdCompanyPager restapiV1_0AccountAccountIdExtensionExtensionIdCompanyPager;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdFax restapiV1_0AccountAccountIdExtensionExtensionIdFax;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdForwardingNumber restapiV1_0AccountAccountIdExtensionExtensionIdForwardingNumber;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdMessageStore restapiV1_0AccountAccountIdExtensionExtensionIdMessageStore;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdMessageStoreMessageId restapiV1_0AccountAccountIdExtensionExtensionIdMessageStoreMessageId;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdMessageStoreMessageIdContentAttachmentId restapiV1_0AccountAccountIdExtensionExtensionIdMessageStoreMessageIdContentAttachmentId;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdPhoneNumber restapiV1_0AccountAccountIdExtensionExtensionIdPhoneNumber;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdPresence restapiV1_0AccountAccountIdExtensionExtensionIdPresence;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdRingout restapiV1_0AccountAccountIdExtensionExtensionIdRingout;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdRingoutRingoutId restapiV1_0AccountAccountIdExtensionExtensionIdRingoutRingoutId;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdSm restapiV1_0AccountAccountIdExtensionExtensionIdSms;
+        public RestapiV1_0AccountAccountIdPhoneNumber restapiV1_0AccountAccountIdPhoneNumber;
+        public RestapiV1_0AccountAccountIdPhoneNumberPhoneNumberId restapiV1_0AccountAccountIdPhoneNumberPhoneNumberId;
+        public RestapiV1_0AccountAccountIdRecordingRecordingId restapiV1_0AccountAccountIdRecordingRecordingId;
+        public RestapiV1_0AccountAccountIdRecordingRecordingIdContent restapiV1_0AccountAccountIdRecordingRecordingIdContent;
+        public RestapiV1_0DictionaryCountry restapiV1_0DictionaryCountry;
+        public RestapiV1_0DictionaryCountryCountryId restapiV1_0DictionaryCountryCountryId;
+        public RestapiV1_0DictionaryLanguage restapiV1_0DictionaryLanguage;
+        public RestapiV1_0DictionaryLanguageLanguageId restapiV1_0DictionaryLanguageLanguageId;
+        public RestapiV1_0DictionaryLocation restapiV1_0DictionaryLocation;
+        public RestapiV1_0DictionaryState restapiV1_0DictionaryState;
+        public RestapiV1_0DictionaryStateStateId restapiV1_0DictionaryStateStateId;
+        public RestapiV1_0DictionaryTimezone restapiV1_0DictionaryTimezone;
+        public RestapiV1_0DictionaryTimezoneTimezoneId restapiV1_0DictionaryTimezoneTimezoneId;
+        public RestapiV1_0Subscription restapiV1_0Subscription;
+        public RestapiV1_0SubscriptionSubscriptionId restapiV1_0SubscriptionSubscriptionId;
 
         public class Restapi
         {
@@ -5545,7 +5545,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -5579,7 +5579,7 @@ public partial class Swagger
                             public class Property
                             {
                                 public Code code;
-                                public ExpiresIn expires_in;
+                                public ExpiresIn expiresIn;
                                 public State state;
 
                                 public class Code
@@ -5617,9 +5617,9 @@ public partial class Swagger
 
                         public class Property
                         {
-                            public ResponseType response_type;
-                            public ClientId client_id;
-                            public RedirectUri redirect_uri;
+                            public ResponseType responseType;
+                            public ClientId clientId;
+                            public RedirectUri redirectUri;
                             public State state;
 
                             public class ResponseType
@@ -5723,14 +5723,14 @@ public partial class Swagger
 
                             public class Property
                             {
-                                public AccessToken access_token;
-                                public ExpiresIn expires_in;
-                                public RefreshToken refresh_token;
-                                public RefreshTokenExpiresIn refresh_token_expires_in;
+                                public AccessToken accessToken;
+                                public ExpiresIn expiresIn;
+                                public RefreshToken refreshToken;
+                                public RefreshTokenExpiresIn refreshTokenExpiresIn;
                                 public Scope scope;
-                                public TokenType token_type;
-                                public OwnerId owner_id;
-                                public EndpointId endpoint_id;
+                                public TokenType tokenType;
+                                public OwnerId ownerId;
+                                public EndpointId endpointId;
 
                                 public class AccessToken
                                 {
@@ -5797,14 +5797,14 @@ public partial class Swagger
 
                         public class Property
                         {
-                            public GrantType grant_type;
-                            public AccessTokenTtl access_token_ttl;
-                            public RefreshTokenTtl refresh_token_ttl;
+                            public GrantType grantType;
+                            public AccessTokenTtl accessTokenTtl;
+                            public RefreshTokenTtl refreshTokenTtl;
                             public Username username;
                             public Extension extension;
                             public Password password;
                             public Scope scope;
-                            public EndpointId endpoint_id;
+                            public EndpointId endpointId;
 
                             public class GrantType
                             {
@@ -5879,7 +5879,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -5907,7 +5907,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -5915,7 +5915,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -5958,18 +5958,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -5988,7 +5988,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6043,7 +6043,7 @@ public partial class Swagger
 
                                 public class BusinessAddress
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6053,7 +6053,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6096,18 +6096,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6127,7 +6127,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6152,7 +6152,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6160,7 +6160,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6203,18 +6203,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6233,7 +6233,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6258,7 +6258,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6266,7 +6266,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6309,18 +6309,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6339,7 +6339,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6382,18 +6382,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6413,7 +6413,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6438,7 +6438,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6446,7 +6446,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6472,7 +6472,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6497,7 +6497,7 @@ public partial class Swagger
 
                             public class From
                             {
-                                public string ref;
+                                public string @ref;
                             }
 
                             public class ReplyOn
@@ -6520,7 +6520,7 @@ public partial class Swagger
 
                                 public class Item
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6530,7 +6530,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6556,7 +6556,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6589,7 +6589,7 @@ public partial class Swagger
 
                                 public class Item
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
 
@@ -6631,7 +6631,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6674,18 +6674,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6703,7 +6703,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6746,18 +6746,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6777,7 +6777,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6830,7 +6830,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6853,7 +6853,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -6886,7 +6886,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6920,7 +6920,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -6963,18 +6963,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -6993,7 +6993,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7018,7 +7018,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7026,7 +7026,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7052,7 +7052,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7078,17 +7078,17 @@ public partial class Swagger
 
                             public class From
                             {
-                                public string ref;
+                                public string @ref;
                             }
 
                             public class To
                             {
-                                public string ref;
+                                public string @ref;
                             }
 
                             public class CallerId
                             {
-                                public string ref;
+                                public string @ref;
                             }
 
                             public class PlayPrompt
@@ -7099,7 +7099,7 @@ public partial class Swagger
 
                             public class Country
                             {
-                                public string ref;
+                                public string @ref;
                             }
                         }
                     }
@@ -7108,7 +7108,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7150,7 +7150,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7158,7 +7158,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7184,7 +7184,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7208,7 +7208,7 @@ public partial class Swagger
 
                             public class From
                             {
-                                public string ref;
+                                public string @ref;
                             }
 
                             public class To
@@ -7219,7 +7219,7 @@ public partial class Swagger
 
                                 public class Item
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
 
@@ -7235,7 +7235,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7278,18 +7278,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -7308,7 +7308,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7333,7 +7333,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7341,7 +7341,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7407,7 +7407,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7441,7 +7441,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7483,18 +7483,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -7532,7 +7532,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7540,7 +7540,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7581,18 +7581,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -7622,7 +7622,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7630,7 +7630,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7672,18 +7672,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -7739,18 +7739,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -7788,7 +7788,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7796,7 +7796,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7838,18 +7838,18 @@ public partial class Swagger
 
                                     public class Item
                                     {
-                                        public string ref;
+                                        public string @ref;
                                     }
                                 }
 
                                 public class Navigation
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
 
                                 public class Paging
                                 {
-                                    public string ref;
+                                    public string @ref;
                                 }
                             }
                         }
@@ -7887,7 +7887,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7895,7 +7895,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
 
@@ -7920,7 +7920,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -7957,7 +7957,7 @@ public partial class Swagger
 
                             public class DeliveryMode
                             {
-                                public string ref;
+                                public string @ref;
                             }
                         }
                     }
@@ -8004,7 +8004,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -8027,7 +8027,7 @@ public partial class Swagger
 
                         public class Schema
                         {
-                            public string ref;
+                            public string @ref;
                         }
                     }
                 }
@@ -8067,7 +8067,7 @@ public partial class Swagger
 
             public class Parameter
             {
-                public string ref;
+                public string @ref;
             }
         }
     }
