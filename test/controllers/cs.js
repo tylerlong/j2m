@@ -1,6 +1,6 @@
 const assert = require('assert');
-const JsonHelper = require('../../helpers/json');
-const CSharpController = require('../../controllers/cs');
+const { readFolder } = require('../../helpers/json');
+const { render } = require('../../controllers/cs');
 
 
 const csharpCode = `
@@ -17,8 +17,8 @@ public partial class User
 describe('csharpController', () => {
   describe('render()', () => {
     it('should render correct C# code', () => {
-      const json = JsonHelper.readFolder('test/fixtures/json/test/');
-      assert.equal(csharpCode, CSharpController.render('user', json));
+      const json = readFolder('test/fixtures/json/test/');
+      assert.equal(csharpCode, render('user', json));
     });
   });
 });

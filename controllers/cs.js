@@ -1,4 +1,4 @@
-const SchemaHelper = require('../helpers/schema');
+const { getClass } = require('../helpers/schema');
 const nunjucks = require('../views/nunjucks');
 
 
@@ -25,7 +25,7 @@ nunjucks.addFilter('csharp_name', (name) => {
 });
 
 const render = (name, json) => {
-  const cls = SchemaHelper.getClass(name, json);
+  const cls = getClass(name, json);
   let model = nunjucks.render('cs/index.cs', { cls });
   model = model.replace(/ +$/gm, ''); // trim blank lines
   model = model.trim();

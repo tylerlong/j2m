@@ -1,16 +1,16 @@
-const ChangeCase = require('change-case');
+const { pascalCase } = require('change-case');
 const deepmerge = require('deepmerge');
-const StringHelper = require('./string');
+const { isInteger, singularize } = require('./string');
 
 
 const getType = (key, value) => {
   const type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
-  if (type === 'number' && StringHelper.isInteger(value)) {
+  if (type === 'number' && isInteger(value)) {
     return 'integer';
   } else if (type === 'array') {
     return `${getType(key, value[0])}[]`;
   } else if (type === 'object') {
-    return ChangeCase.pascalCase(StringHelper.singularize(key));
+    return pascalCase(singularize(key));
   }
   return type;
 };
@@ -28,7 +28,7 @@ const getClass = (_name, _obj) => {
     obj = obj.reduce((prev, data) => deepmerge(prev, data), {});
   }
   return {
-    name: ChangeCase.pascalCase(StringHelper.singularize(name)),
+    name: pascalCase(singularize(name)),
     fields: getFields(obj),
     classes: getFields(obj).filter((field) => /[A-Z]/.test(field.type[0]))
       .map((field) => getClass(field.type, field.value)),
