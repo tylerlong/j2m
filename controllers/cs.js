@@ -3,30 +3,27 @@ const nunjucks = require('../views/nunjucks');
 const { camelCase } = require('change-case');
 
 
+const typeMap = new Map([
+  ['integer', 'int?'],
+  ['integer[]', 'int?[]'],
+  ['number', 'double?'],
+  ['number[]', 'double?[]'],
+  ['boolean', 'bool'],
+]);
 nunjucks.addFilter('csharp_type', (type) => {
-  if (type === 'integer') {
-    return 'int?';
-  }
-  if (type === 'integer[]') {
-    return 'int?[]';
-  }
-  if (type === 'number') {
-    return 'double?';
-  }
-  if (type === 'number[]') {
-    return 'double?[]';
-  }
-  if (type === 'boolean') {
-    return 'bool';
+  if (typeMap.has(type)) {
+    return typeMap.get(type);
   }
   return type;
 });
-nunjucks.addFilter('csharp_name', (name) => {
-  if (['operator', 'default', 'in', 'enum', 'ref'].indexOf(name) > -1) {
-    return `@${name}`;
-  }
+
+const keywordSet = new Set(['operator', 'default', 'in', 'enum', 'ref']);
+nunjucks.addFilter('csharp_name', function f(name) {
   if (name.startsWith('$')) {
-    return `@${name.slice(1)}`;
+    return f(name.slice(1));
+  }
+  if (keywordSet.has(name)) {
+    return `@${name}`;
   }
   return camelCase(name);
 });

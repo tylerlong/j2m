@@ -14,6 +14,8 @@ Multiple json files will be deep-merged into one json file before processing.
 1. auto test upon saving
     1. gulp
 1. best practice to write documentation
+1. TypeScript
+1. allow user to specify template
 
 
 ## Installation
