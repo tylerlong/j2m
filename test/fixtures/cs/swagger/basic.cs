@@ -7,11 +7,11 @@ public partial class Swagger
     public string[] schemes;
     public string[] produces;
     public string[] consumes;
-    public SecurityDefinition securityDefinitions;
+    public SecurityDefinitions securityDefinitions;
     public Security[] security;
-    public Parameter parameters;
-    public Definition definitions;
-    public Path paths;
+    public Parameters parameters;
+    public Definitions definitions;
+    public Paths paths;
 
     public class Info
     {
@@ -21,7 +21,7 @@ public partial class Swagger
         public string termsOfService;
     }
 
-    public class SecurityDefinition
+    public class SecurityDefinitions
     {
         public Oauth oauth;
 
@@ -31,9 +31,9 @@ public partial class Swagger
             public string flow;
             public string authorizationUrl;
             public string tokenUrl;
-            public Scope scopes;
+            public Scopes scopes;
 
-            public class Scope
+            public class Scopes
             {
                 public string @default;
             }
@@ -45,7 +45,7 @@ public partial class Swagger
         public string[] oauth;
     }
 
-    public class Parameter
+    public class Parameters
     {
         public AccountId accountId;
         public AnsweringRuleId answeringRuleId;
@@ -362,10 +362,10 @@ public partial class Swagger
         }
     }
 
-    public class Definition
+    public class Definitions
     {
         public AccountInfo accountInfo;
-        public AccountLimit accountLimits;
+        public AccountLimits accountLimits;
         public AddonInfo addonInfo;
         public AnsweringRuleInfo answeringRuleInfo;
         public AnsweringRuleInfoCalleeInfo answeringRuleInfoCalleeInfo;
@@ -394,7 +394,7 @@ public partial class Swagger
         public EmergencyAddressInfo emergencyAddressInfo;
         public ExtensionInfo extensionInfo;
         public ExtensionInfoRequestContactInfo extensionInfoRequestContactInfo;
-        public ExtensionInfoRequestContactInfoRegionalSetting extensionInfoRequestContactInfoRegionalSettings;
+        public ExtensionInfoRequestContactInfoRegionalSettings extensionInfoRequestContactInfoRegionalSettings;
         public ExtensionInfoRequestContactInfoRegionalSettingsFormattingLocale extensionInfoRequestContactInfoRegionalSettingsFormattingLocale;
         public ExtensionInfoRequestContactInfoRegionalSettingsGreetingLanguage extensionInfoRequestContactInfoRegionalSettingsGreetingLanguage;
         public ExtensionInfoRequestContactInfoRegionalSettingsLanguage extensionInfoRequestContactInfoRegionalSettingsLanguage;
@@ -404,7 +404,7 @@ public partial class Swagger
         public ExtensionInfoRequestProvision extensionInfoRequestProvision;
         public ExtensionInfoRequestProvisionContactInfo extensionInfoRequestProvisionContactInfo;
         public ExtensionInfoRequestStatusInfo extensionInfoRequestStatusInfo;
-        public ExtensionPermission extensionPermissions;
+        public ExtensionPermissions extensionPermissions;
         public ExtensionServiceFeatureInfo extensionServiceFeatureInfo;
         public FormattingLocaleInfo formattingLocaleInfo;
         public ForwardingInfo forwardingInfo;
@@ -444,7 +444,7 @@ public partial class Swagger
         public RecipientInfo recipientInfo;
         public RecordingInfo recordingInfo;
         public ReferenceInfo referenceInfo;
-        public RegionalSetting regionalSettings;
+        public RegionalSettings regionalSettings;
         public ReservePhoneNumberRequestReserveRecord reservePhoneNumberRequestReserveRecord;
         public ReservePhoneNumberResponseReserveRecord reservePhoneNumberResponseReserveRecord;
         public RingOutRequestCountryInfo ringOutRequestCountryInfo;
@@ -479,9 +479,9 @@ public partial class Swagger
         public class AccountInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -548,12 +548,12 @@ public partial class Swagger
             }
         }
 
-        public class AccountLimit
+        public class AccountLimits
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public FreeSoftPhoneLinesPerExtension freeSoftPhoneLinesPerExtension;
                 public MeetingSize meetingSize;
@@ -582,9 +582,9 @@ public partial class Swagger
         public class AddonInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Count count;
@@ -606,9 +606,9 @@ public partial class Swagger
         public class AnsweringRuleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public Id id;
@@ -616,8 +616,8 @@ public partial class Swagger
                 public Name name;
                 public Enabled enabled;
                 public Schedule schedule;
-                public CalledNumber calledNumbers;
-                public Caller callers;
+                public CalledNumbers calledNumbers;
+                public Callers callers;
                 public CallHandlingAction callHandlingAction;
                 public Forwarding forwarding;
                 public UnconditionalForwarding unconditionalForwarding;
@@ -659,25 +659,25 @@ public partial class Swagger
                     public string @ref;
                 }
 
-                public class CalledNumber
+                public class CalledNumbers
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
                 }
 
-                public class Caller
+                public class Callers
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -710,9 +710,9 @@ public partial class Swagger
         public class AnsweringRuleInfoCalleeInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
 
@@ -727,9 +727,9 @@ public partial class Swagger
         public class AnsweringRuleInfoCallerInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public CallerId callerId;
                 public Name name;
@@ -751,9 +751,9 @@ public partial class Swagger
         public class AttachmentInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public ContentType contentType;
@@ -775,9 +775,9 @@ public partial class Swagger
         public class BillingPlanInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Name name;
@@ -822,9 +822,9 @@ public partial class Swagger
         public class BlockedNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -860,9 +860,9 @@ public partial class Swagger
         public class BrandInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Name name;
@@ -890,9 +890,9 @@ public partial class Swagger
         public class BusinessAddressInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Country country;
                 public State state;
@@ -935,13 +935,13 @@ public partial class Swagger
         public class BusinessHourScheduleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
-                public WeeklyRange weeklyRanges;
+                public WeeklyRanges weeklyRanges;
 
-                public class WeeklyRange
+                public class WeeklyRanges
                 {
                     public string @ref;
                 }
@@ -951,9 +951,9 @@ public partial class Swagger
         public class CallLogInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1047,9 +1047,9 @@ public partial class Swagger
         public class CallLogRecord
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1065,7 +1065,7 @@ public partial class Swagger
                 public Recording recording;
                 public LastModifiedTime lastModifiedTime;
                 public Transport transport;
-                public Leg legs;
+                public Legs legs;
 
                 public class Id
                 {
@@ -1155,13 +1155,13 @@ public partial class Swagger
                     public string[] @enum;
                 }
 
-                public class Leg
+                public class Legs
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -1172,9 +1172,9 @@ public partial class Swagger
         public class CallerInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
                 public ExtensionNumber extensionNumber;
@@ -1210,9 +1210,9 @@ public partial class Swagger
         public class ConferencingRequestPhoneNumber
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
                 public Default @default;
@@ -1234,9 +1234,9 @@ public partial class Swagger
         public class ConferencingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public AllowJoinBeforeHost allowJoinBeforeHost;
@@ -1245,7 +1245,7 @@ public partial class Swagger
                 public ParticipantCode participantCode;
                 public PhoneNumber phoneNumber;
                 public TapToJoinUri tapToJoinUri;
-                public PhoneNumber phoneNumbers;
+                public PhoneNumbers phoneNumbers;
 
                 public class Uri
                 {
@@ -1289,13 +1289,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class PhoneNumber
+                public class PhoneNumbers
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -1306,9 +1306,9 @@ public partial class Swagger
         public class ConferencingInfoPhoneNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Country country;
                 public Default @default;
@@ -1350,9 +1350,9 @@ public partial class Swagger
         public class ConferencingInfoPhoneNumberInfoCountryInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1402,9 +1402,9 @@ public partial class Swagger
         public class ContactAddressInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Country country;
                 public State state;
@@ -1447,9 +1447,9 @@ public partial class Swagger
         public class ContactInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public FirstName firstName;
                 public LastName lastName;
@@ -1498,9 +1498,9 @@ public partial class Swagger
         public class CountryInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1529,9 +1529,9 @@ public partial class Swagger
         public class DeliveryMode
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public TransportType transportType;
                 public Encryption encryption;
@@ -1589,9 +1589,9 @@ public partial class Swagger
         public class DepartmentResponseExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1627,9 +1627,9 @@ public partial class Swagger
         public class DepartmentInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1658,9 +1658,9 @@ public partial class Swagger
         public class DeviceInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1672,7 +1672,7 @@ public partial class Swagger
                 public Model model;
                 public Extension extension;
                 public EmergencyServiceAddress emergencyServiceAddress;
-                public PhoneLine phoneLines;
+                public PhoneLines phoneLines;
                 public Shipping shipping;
                 public BoxBillingId boxBillingId;
 
@@ -1734,7 +1734,7 @@ public partial class Swagger
                     public string @ref;
                 }
 
-                public class PhoneLine
+                public class PhoneLines
                 {
                     public string @ref;
                 }
@@ -1755,9 +1755,9 @@ public partial class Swagger
         public class DeviceInfoExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -1793,9 +1793,9 @@ public partial class Swagger
         public class EmergencyAddressInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public CustomerName customerName;
                 public Street street;
@@ -1852,22 +1852,22 @@ public partial class Swagger
         public class ExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
                 public Contact contact;
-                public Department departments;
+                public Departments departments;
                 public ExtensionNumber extensionNumber;
                 public Name name;
                 public PartnerId partnerId;
-                public Permission permissions;
+                public Permissions permissions;
                 public ProfileImage profileImage;
-                public Reference references;
-                public RegionalSetting regionalSettings;
-                public ServiceFeature serviceFeatures;
+                public References references;
+                public RegionalSettings regionalSettings;
+                public ServiceFeatures serviceFeatures;
                 public SetupWizardState setupWizardState;
                 public Status status;
                 public StatusInfo statusInfo;
@@ -1890,7 +1890,7 @@ public partial class Swagger
                     public string @ref;
                 }
 
-                public class Department
+                public class Departments
                 {
                     public string @ref;
                 }
@@ -1913,7 +1913,7 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Permission
+                public class Permissions
                 {
                     public string @ref;
                 }
@@ -1923,30 +1923,30 @@ public partial class Swagger
                     public string @ref;
                 }
 
-                public class Reference
+                public class References
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
                 }
 
-                public class RegionalSetting
+                public class RegionalSettings
                 {
                     public string @ref;
                 }
 
-                public class ServiceFeature
+                public class ServiceFeatures
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -1983,12 +1983,12 @@ public partial class Swagger
         public class ExtensionInfoRequestContactInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Contact contact;
-                public RegionalSetting regionalSettings;
+                public RegionalSettings regionalSettings;
                 public SetupWizardState setupWizardState;
                 public Department department;
 
@@ -1997,7 +1997,7 @@ public partial class Swagger
                     public string @ref;
                 }
 
-                public class RegionalSetting
+                public class RegionalSettings
                 {
                     public string @ref;
                 }
@@ -2017,12 +2017,12 @@ public partial class Swagger
             }
         }
 
-        public class ExtensionInfoRequestContactInfoRegionalSetting
+        public class ExtensionInfoRequestContactInfoRegionalSettings
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Timezone timezone;
                 public Language language;
@@ -2054,9 +2054,9 @@ public partial class Swagger
         public class ExtensionInfoRequestContactInfoRegionalSettingsFormattingLocale
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
 
@@ -2071,9 +2071,9 @@ public partial class Swagger
         public class ExtensionInfoRequestContactInfoRegionalSettingsGreetingLanguage
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
 
@@ -2088,9 +2088,9 @@ public partial class Swagger
         public class ExtensionInfoRequestContactInfoRegionalSettingsLanguage
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
 
@@ -2105,9 +2105,9 @@ public partial class Swagger
         public class ExtensionInfoRequestContactInfoRegionalSettingsTimezone
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
 
@@ -2122,9 +2122,9 @@ public partial class Swagger
         public class ExtensionInfoRequestPartnerId
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PartnerId partnerId;
 
@@ -2139,9 +2139,9 @@ public partial class Swagger
         public class ExtensionInfoRequestPasswordPin
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Password password;
                 public IvrPin ivrPin;
@@ -2163,9 +2163,9 @@ public partial class Swagger
         public class ExtensionInfoRequestProvision
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Status status;
                 public Contact contact;
@@ -2187,9 +2187,9 @@ public partial class Swagger
         public class ExtensionInfoRequestProvisionContactInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public FirstName firstName;
                 public LastName lastName;
@@ -2218,9 +2218,9 @@ public partial class Swagger
         public class ExtensionInfoRequestStatusInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Status status;
                 public StatusInfo statusInfo;
@@ -2239,12 +2239,12 @@ public partial class Swagger
             }
         }
 
-        public class ExtensionPermission
+        public class ExtensionPermissions
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Admin admin;
                 public InternationalCalling internationalCalling;
@@ -2264,9 +2264,9 @@ public partial class Swagger
         public class ExtensionServiceFeatureInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Enabled enabled;
                 public FeatureName featureName;
@@ -2295,9 +2295,9 @@ public partial class Swagger
         public class FormattingLocaleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public LocaleCode localeCode;
@@ -2326,23 +2326,23 @@ public partial class Swagger
         public class ForwardingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
-                public NotifyMySoftPhone notifyMySoftPhones;
-                public NotifyAdminSoftPhone notifyAdminSoftPhones;
+                public NotifyMySoftPhones notifyMySoftPhones;
+                public NotifyAdminSoftPhones notifyAdminSoftPhones;
                 public SoftPhonesRingCount softPhonesRingCount;
                 public RingingMode ringingMode;
-                public Rule rules;
+                public Rules rules;
 
-                public class NotifyMySoftPhone
+                public class NotifyMySoftPhones
                 {
                     public string type;
                     public string description;
                 }
 
-                public class NotifyAdminSoftPhone
+                public class NotifyAdminSoftPhones
                 {
                     public string type;
                     public string description;
@@ -2361,13 +2361,13 @@ public partial class Swagger
                     public string[] @enum;
                 }
 
-                public class Rule
+                public class Rules
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -2378,15 +2378,15 @@ public partial class Swagger
         public class ForwardingNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
                 public PhoneNumber phoneNumber;
                 public Label label;
-                public Feature features;
+                public Features features;
                 public FlipNumber flipNumber;
 
                 public class Id
@@ -2413,7 +2413,7 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Feature
+                public class Features
                 {
                     public string type;
                     public string description;
@@ -2431,9 +2431,9 @@ public partial class Swagger
         public class FullCountryInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -2497,9 +2497,9 @@ public partial class Swagger
         public class GrantInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public Extension extension;
@@ -2534,9 +2534,9 @@ public partial class Swagger
         public class GrantInfoExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -2573,9 +2573,9 @@ public partial class Swagger
         public class GreetingLanguageInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public LocaleCode localeCode;
@@ -2604,15 +2604,15 @@ public partial class Swagger
         public class GroupInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
                 public ContactsCount contactsCount;
                 public GroupName groupName;
-                public Note notes;
+                public Notes notes;
 
                 public class Id
                 {
@@ -2638,7 +2638,7 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Note
+                public class Notes
                 {
                     public string type;
                     public string description;
@@ -2649,9 +2649,9 @@ public partial class Swagger
         public class LanguageInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -2708,9 +2708,9 @@ public partial class Swagger
         public class LegInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Action action;
                 public Direction direction;
@@ -2804,9 +2804,9 @@ public partial class Swagger
         public class LegInfoExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -2828,9 +2828,9 @@ public partial class Swagger
         public class LinksInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public StartUri startUri;
                 public JoinUri joinUri;
@@ -2852,9 +2852,9 @@ public partial class Swagger
         public class LocationInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public AreaCode areaCode;
@@ -2904,9 +2904,9 @@ public partial class Swagger
         public class LookUpPhoneNumberPhoneNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
                 public FormattedNumber formattedNumber;
@@ -2942,9 +2942,9 @@ public partial class Swagger
         public class MeetingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public Id id;
@@ -2952,12 +2952,12 @@ public partial class Swagger
                 public MeetingType meetingType;
                 public Password password;
                 public Status status;
-                public Link links;
+                public Links links;
                 public Schedule schedule;
                 public AllowJoinBeforeHost allowJoinBeforeHost;
                 public StartHostVideo startHostVideo;
                 public StartParticipantsVideo startParticipantsVideo;
-                public AudioOption audioOptions;
+                public AudioOptions audioOptions;
 
                 public class Uri
                 {
@@ -2997,7 +2997,7 @@ public partial class Swagger
                     public string[] @enum;
                 }
 
-                public class Link
+                public class Links
                 {
                     public string @ref;
                 }
@@ -3025,13 +3025,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class AudioOption
+                public class AudioOptions
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string type;
                     }
@@ -3042,12 +3042,12 @@ public partial class Swagger
         public class MeetingScheduleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public StartTime startTime;
-                public DurationInMinute durationInMinutes;
+                public DurationInMinutes durationInMinutes;
                 public TimeZone timeZone;
 
                 public class StartTime
@@ -3057,7 +3057,7 @@ public partial class Swagger
                     public string format;
                 }
 
-                public class DurationInMinute
+                public class DurationInMinutes
                 {
                     public string type;
                     public string description;
@@ -3073,9 +3073,9 @@ public partial class Swagger
         public class MeetingScheduleInfoTimezoneInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
 
@@ -3090,9 +3090,9 @@ public partial class Swagger
         public class MessageAttachmentInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -3136,13 +3136,13 @@ public partial class Swagger
         public class MessageInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
-                public Attachment attachments;
+                public Attachments attachments;
                 public Availability availability;
                 public ConversationId conversationId;
                 public CreationTime creationTime;
@@ -3175,13 +3175,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Attachment
+                public class Attachments
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -3296,9 +3296,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -3323,9 +3323,9 @@ public partial class Swagger
         public class MessageInfoCallerInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public ExtensionNumber extensionNumber;
                 public Location location;
@@ -3377,13 +3377,13 @@ public partial class Swagger
         public class ModelInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Name name;
-                public Addon addons;
+                public Addons addons;
 
                 public class Id
                 {
@@ -3397,13 +3397,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Addon
+                public class Addons
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -3414,9 +3414,9 @@ public partial class Swagger
         public class NavigationInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public FirstPage firstPage;
                 public NextPage nextPage;
@@ -3452,16 +3452,16 @@ public partial class Swagger
         public class PagingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Page page;
                 public PerPage perPage;
                 public PageStart pageStart;
                 public PageEnd pageEnd;
-                public TotalPage totalPages;
-                public TotalElement totalElements;
+                public TotalPages totalPages;
+                public TotalElements totalElements;
 
                 public class Page
                 {
@@ -3487,13 +3487,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class TotalPage
+                public class TotalPages
                 {
                     public string type;
                     public string description;
                 }
 
-                public class TotalElement
+                public class TotalElements
                 {
                     public string type;
                     public string description;
@@ -3504,9 +3504,9 @@ public partial class Swagger
         public class ParsePhoneNumberCountryInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -3556,9 +3556,9 @@ public partial class Swagger
         public class ParsePhoneNumberPhoneNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public AreaCode areaCode;
                 public Country country;
@@ -3580,9 +3580,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -3635,9 +3635,9 @@ public partial class Swagger
         public class PermissionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Enabled enabled;
 
@@ -3652,9 +3652,9 @@ public partial class Swagger
         public class PersonalContactInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Url url;
@@ -3685,7 +3685,7 @@ public partial class Swagger
                 public OtherAddress otherAddress;
                 public Birthday birthday;
                 public WebPage webPage;
-                public Note notes;
+                public Notes notes;
 
                 public class Id
                 {
@@ -3860,7 +3860,7 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Note
+                public class Notes
                 {
                     public string type;
                     public string description;
@@ -3871,9 +3871,9 @@ public partial class Swagger
         public class PhoneLinesInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public LineType lineType;
                 public PhoneInfo phoneInfo;
@@ -3895,9 +3895,9 @@ public partial class Swagger
         public class PhoneLinesInfoPhoneNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Country country;
@@ -3963,14 +3963,14 @@ public partial class Swagger
         public class PhoneNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Country country;
                 public Extension extension;
-                public Feature features;
+                public Features features;
                 public Location location;
                 public PaymentType paymentType;
                 public PhoneNumber phoneNumber;
@@ -3994,13 +3994,13 @@ public partial class Swagger
                     public string @ref;
                 }
 
-                public class Feature
+                public class Features
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string type;
                     }
@@ -4050,9 +4050,9 @@ public partial class Swagger
         public class PhoneNumberInfoExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -4088,9 +4088,9 @@ public partial class Swagger
         public class PresenceInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public AllowSeeMyPresence allowSeeMyPresence;
@@ -4171,9 +4171,9 @@ public partial class Swagger
         public class PresenceInfoExtensionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -4202,15 +4202,15 @@ public partial class Swagger
         public class ProfileImageInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public Etag etag;
                 public LastModified lastModified;
                 public ContentType contentType;
-                public Scale scales;
+                public Scales scales;
 
                 public class Uri
                 {
@@ -4237,13 +4237,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class Scale
+                public class Scales
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string type;
                     }
@@ -4254,9 +4254,9 @@ public partial class Swagger
         public class RangesInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public From from;
                 public To to;
@@ -4280,9 +4280,9 @@ public partial class Swagger
         public class RecipientInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public Id id;
@@ -4304,9 +4304,9 @@ public partial class Swagger
         public class RecordingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -4343,9 +4343,9 @@ public partial class Swagger
         public class ReferenceInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Ref @ref;
                 public Type type;
@@ -4365,12 +4365,12 @@ public partial class Swagger
             }
         }
 
-        public class RegionalSetting
+        public class RegionalSettings
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public HomeCountry homeCountry;
                 public Timezone timezone;
@@ -4408,9 +4408,9 @@ public partial class Swagger
         public class ReservePhoneNumberRequestReserveRecord
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
                 public ReservedTill reservedTill;
@@ -4433,9 +4433,9 @@ public partial class Swagger
         public class ReservePhoneNumberResponseReserveRecord
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
                 public FormattedNumber formattedNumber;
@@ -4488,9 +4488,9 @@ public partial class Swagger
         public class RingOutRequestCountryInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
 
@@ -4505,9 +4505,9 @@ public partial class Swagger
         public class RingOutRequestFrom
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
                 public ForwardingNumberId forwardingNumberId;
@@ -4529,9 +4529,9 @@ public partial class Swagger
         public class RingOutRequestTo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
 
@@ -4546,9 +4546,9 @@ public partial class Swagger
         public class RingOutInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Status status;
@@ -4569,9 +4569,9 @@ public partial class Swagger
         public class RingOutStatusInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public CallStatus callStatus;
                 public CallerStatus callerStatus;
@@ -4603,13 +4603,13 @@ public partial class Swagger
         public class RuleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Index index;
                 public RingCount ringCount;
-                public ForwardingNumber forwardingNumbers;
+                public ForwardingNumbers forwardingNumbers;
 
                 public class Index
                 {
@@ -4623,13 +4623,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class ForwardingNumber
+                public class ForwardingNumbers
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -4640,9 +4640,9 @@ public partial class Swagger
         public class RuleInfoForwardingNumberInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public Id id;
@@ -4678,20 +4678,20 @@ public partial class Swagger
         public class ScheduleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
-                public WeeklyRange weeklyRanges;
-                public Range ranges;
+                public WeeklyRanges weeklyRanges;
+                public Ranges ranges;
                 public Ref @ref;
 
-                public class WeeklyRange
+                public class WeeklyRanges
                 {
                     public string @ref;
                 }
 
-                public class Range
+                public class Ranges
                 {
                     public string @ref;
                 }
@@ -4708,12 +4708,12 @@ public partial class Swagger
         public class ServerInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
-                public ApiVersion apiVersions;
+                public ApiVersions apiVersions;
                 public ServerVersion serverVersion;
                 public ServerRevision serverRevision;
 
@@ -4723,13 +4723,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class ApiVersion
+                public class ApiVersions
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -4752,9 +4752,9 @@ public partial class Swagger
         public class ServiceFeatureInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public FeatureName featureName;
                 public Enabled enabled;
@@ -4776,9 +4776,9 @@ public partial class Swagger
         public class ServiceInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public BillingPlan billingPlan;
@@ -4817,9 +4817,9 @@ public partial class Swagger
         public class ServicePlanInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Name name;
@@ -4848,9 +4848,9 @@ public partial class Swagger
         public class ShippingAddress
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public CustomerName customerName;
                 public Street street;
@@ -4907,9 +4907,9 @@ public partial class Swagger
         public class ShippingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Status status;
                 public Carrier carrier;
@@ -4940,9 +4940,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -4952,9 +4952,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -4965,9 +4965,9 @@ public partial class Swagger
         public class ShippingMethod
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Name name;
@@ -4991,9 +4991,9 @@ public partial class Swagger
         public class StateInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -5035,9 +5035,9 @@ public partial class Swagger
         public class StateInfoCountryInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -5059,9 +5059,9 @@ public partial class Swagger
         public class StatusInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Comment comment;
                 public Reason reason;
@@ -5084,9 +5084,9 @@ public partial class Swagger
         public class SubscriptionRequestDeliveryMode
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public TransportType transportType;
                 public Encryption encryption;
@@ -5109,13 +5109,13 @@ public partial class Swagger
         public class SubscriptionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
-                public EventFilter eventFilters;
+                public EventFilters eventFilters;
                 public ExpirationTime expirationTime;
                 public ExpiresIn expiresIn;
                 public Status status;
@@ -5134,13 +5134,13 @@ public partial class Swagger
                     public string description;
                 }
 
-                public class EventFilter
+                public class EventFilters
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string type;
                     }
@@ -5183,9 +5183,9 @@ public partial class Swagger
         public class SyncInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public SyncType syncType;
                 public SyncToken syncToken;
@@ -5216,9 +5216,9 @@ public partial class Swagger
         public class TargetServicePlanInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Name name;
@@ -5240,9 +5240,9 @@ public partial class Swagger
         public class TimeInterval
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public From from;
                 public To to;
@@ -5266,9 +5266,9 @@ public partial class Swagger
         public class TimezoneInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Id id;
                 public Uri uri;
@@ -5304,9 +5304,9 @@ public partial class Swagger
         public class UnconditionalForwardingInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public PhoneNumber phoneNumber;
 
@@ -5321,9 +5321,9 @@ public partial class Swagger
         public class VersionInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Uri uri;
                 public VersionString versionString;
@@ -5359,9 +5359,9 @@ public partial class Swagger
         public class VoicemailInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Enabled enabled;
                 public Recipient recipient;
@@ -5382,9 +5382,9 @@ public partial class Swagger
         public class WeeklyScheduleInfo
         {
             public string type;
-            public Property properties;
+            public Properties properties;
 
-            public class Property
+            public class Properties
             {
                 public Monday monday;
                 public Tuesday tuesday;
@@ -5398,9 +5398,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5410,9 +5410,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5422,9 +5422,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5434,9 +5434,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5446,9 +5446,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5458,9 +5458,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5470,9 +5470,9 @@ public partial class Swagger
                 {
                     public string type;
                     public string description;
-                    public Item items;
+                    public Items items;
 
-                    public class Item
+                    public class Items
                     {
                         public string @ref;
                     }
@@ -5481,7 +5481,7 @@ public partial class Swagger
         }
     }
 
-    public class Path
+    public class Paths
     {
         public Restapi restapi;
         public RestapiOauthAuthorize restapiOauthAuthorize;
@@ -5489,13 +5489,13 @@ public partial class Swagger
         public RestapiOauthToken restapiOauthToken;
         public RestapiV1_0 restapiV1_0;
         public RestapiV1_0AccountAccountId restapiV1_0AccountAccountId;
-        public RestapiV1_0AccountAccountIdActiveCall restapiV1_0AccountAccountIdActiveCalls;
+        public RestapiV1_0AccountAccountIdActiveCalls restapiV1_0AccountAccountIdActiveCalls;
         public RestapiV1_0AccountAccountIdBusinessAddress restapiV1_0AccountAccountIdBusinessAddress;
         public RestapiV1_0AccountAccountIdCallLog restapiV1_0AccountAccountIdCallLog;
         public RestapiV1_0AccountAccountIdCallLogCallLogId restapiV1_0AccountAccountIdCallLogCallLogId;
         public RestapiV1_0AccountAccountIdExtension restapiV1_0AccountAccountIdExtension;
         public RestapiV1_0AccountAccountIdExtensionExtensionId restapiV1_0AccountAccountIdExtensionExtensionId;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdActiveCall restapiV1_0AccountAccountIdExtensionExtensionIdActiveCalls;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdActiveCalls restapiV1_0AccountAccountIdExtensionExtensionIdActiveCalls;
         public RestapiV1_0AccountAccountIdExtensionExtensionIdCallLog restapiV1_0AccountAccountIdExtensionExtensionIdCallLog;
         public RestapiV1_0AccountAccountIdExtensionExtensionIdCallLogCallLogId restapiV1_0AccountAccountIdExtensionExtensionIdCallLogCallLogId;
         public RestapiV1_0AccountAccountIdExtensionExtensionIdCompanyPager restapiV1_0AccountAccountIdExtensionExtensionIdCompanyPager;
@@ -5508,7 +5508,7 @@ public partial class Swagger
         public RestapiV1_0AccountAccountIdExtensionExtensionIdPresence restapiV1_0AccountAccountIdExtensionExtensionIdPresence;
         public RestapiV1_0AccountAccountIdExtensionExtensionIdRingout restapiV1_0AccountAccountIdExtensionExtensionIdRingout;
         public RestapiV1_0AccountAccountIdExtensionExtensionIdRingoutRingoutId restapiV1_0AccountAccountIdExtensionExtensionIdRingoutRingoutId;
-        public RestapiV1_0AccountAccountIdExtensionExtensionIdSm restapiV1_0AccountAccountIdExtensionExtensionIdSms;
+        public RestapiV1_0AccountAccountIdExtensionExtensionIdSms restapiV1_0AccountAccountIdExtensionExtensionIdSms;
         public RestapiV1_0AccountAccountIdPhoneNumber restapiV1_0AccountAccountIdPhoneNumber;
         public RestapiV1_0AccountAccountIdPhoneNumberPhoneNumberId restapiV1_0AccountAccountIdPhoneNumberPhoneNumberId;
         public RestapiV1_0AccountAccountIdRecordingRecordingId restapiV1_0AccountAccountIdRecordingRecordingId;
@@ -5532,9 +5532,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5559,10 +5559,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5574,9 +5574,9 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
                                 public Code code;
                                 public ExpiresIn expiresIn;
@@ -5613,9 +5613,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public ResponseType responseType;
                             public ClientId clientId;
@@ -5658,10 +5658,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5680,9 +5680,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public Token token;
 
@@ -5704,10 +5704,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5719,9 +5719,9 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
                                 public AccessToken accessToken;
                                 public ExpiresIn expiresIn;
@@ -5793,9 +5793,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public GrantType grantType;
                             public AccessTokenTtl accessTokenTtl;
@@ -5866,9 +5866,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5894,9 +5894,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5919,7 +5919,7 @@ public partial class Swagger
             }
         }
 
-        public class RestapiV1_0AccountAccountIdActiveCall
+        public class RestapiV1_0AccountAccountIdActiveCalls
         {
             public Get get;
             public Parameter[] parameters;
@@ -5927,10 +5927,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -5942,21 +5942,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6000,9 +6000,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6014,9 +6014,9 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
                                 public Uri uri;
                                 public Company company;
@@ -6065,10 +6065,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6080,21 +6080,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6139,9 +6139,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6172,10 +6172,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6187,21 +6187,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6245,9 +6245,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6270,7 +6270,7 @@ public partial class Swagger
             }
         }
 
-        public class RestapiV1_0AccountAccountIdExtensionExtensionIdActiveCall
+        public class RestapiV1_0AccountAccountIdExtensionExtensionIdActiveCalls
         {
             public Get get;
             public Parameter[] parameters;
@@ -6278,10 +6278,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6293,21 +6293,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6351,10 +6351,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6366,21 +6366,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6425,9 +6425,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6458,10 +6458,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6486,9 +6486,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public From from;
                             public ReplyOn replyOn;
@@ -6516,9 +6516,9 @@ public partial class Swagger
                             {
                                 public string type;
                                 public string description;
-                                public Item items;
+                                public Items items;
 
-                                public class Item
+                                public class Items
                                 {
                                     public string @ref;
                                 }
@@ -6542,10 +6542,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6570,9 +6570,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public To to;
                             public Resolution resolution;
@@ -6585,9 +6585,9 @@ public partial class Swagger
                             {
                                 public string type;
                                 public string description;
-                                public Item items;
+                                public Items items;
 
-                                public class Item
+                                public class Items
                                 {
                                     public string @ref;
                                 }
@@ -6643,10 +6643,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6658,21 +6658,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6715,10 +6715,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6730,21 +6730,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -6791,10 +6791,10 @@ public partial class Swagger
             public class Delete
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6817,9 +6817,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6839,10 +6839,10 @@ public partial class Swagger
             public class Put
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6867,9 +6867,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public ReadStatus readStatus;
 
@@ -6898,9 +6898,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6932,10 +6932,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -6947,21 +6947,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7005,9 +7005,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7038,10 +7038,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7066,9 +7066,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public From from;
                             public To to;
@@ -7121,9 +7121,9 @@ public partial class Swagger
             public class Delete
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7137,9 +7137,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7162,7 +7162,7 @@ public partial class Swagger
             }
         }
 
-        public class RestapiV1_0AccountAccountIdExtensionExtensionIdSm
+        public class RestapiV1_0AccountAccountIdExtensionExtensionIdSms
         {
             public Post post;
             public Parameter[] parameters;
@@ -7170,10 +7170,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7198,9 +7198,9 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
                             public From from;
                             public To to;
@@ -7215,9 +7215,9 @@ public partial class Swagger
                             {
                                 public string type;
                                 public string description;
-                                public Item items;
+                                public Items items;
 
-                                public class Item
+                                public class Items
                                 {
                                     public string @ref;
                                 }
@@ -7247,10 +7247,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7262,21 +7262,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Paging paging;
                                 public Navigation navigation;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7320,9 +7320,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7353,9 +7353,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7367,9 +7367,9 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
                                 public Id id;
                                 public ContentUri contentUri;
@@ -7419,9 +7419,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7452,10 +7452,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7467,21 +7467,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7519,9 +7519,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7551,9 +7551,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7565,21 +7565,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7609,9 +7609,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7641,10 +7641,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7656,21 +7656,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7708,10 +7708,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7723,21 +7723,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7775,9 +7775,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7807,10 +7807,10 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7822,21 +7822,21 @@ public partial class Swagger
                         public class Schema
                         {
                             public string type;
-                            public Property properties;
+                            public Properties properties;
 
-                            public class Property
+                            public class Properties
                             {
-                                public Record records;
+                                public Records records;
                                 public Navigation navigation;
                                 public Paging paging;
 
-                                public class Record
+                                public class Records
                                 {
                                     public string type;
                                     public string description;
-                                    public Item items;
+                                    public Items items;
 
-                                    public class Item
+                                    public class Items
                                     {
                                         public string @ref;
                                     }
@@ -7874,9 +7874,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7906,10 +7906,10 @@ public partial class Swagger
             public class Post
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7936,20 +7936,20 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
-                            public EventFilter eventFilters;
+                            public EventFilters eventFilters;
                             public DeliveryMode deliveryMode;
 
-                            public class EventFilter
+                            public class EventFilters
                             {
                                 public string type;
                                 public string description;
-                                public Item items;
+                                public Items items;
 
-                                public class Item
+                                public class Items
                                 {
                                     public string type;
                                 }
@@ -7975,9 +7975,9 @@ public partial class Swagger
             public class Delete
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -7991,9 +7991,9 @@ public partial class Swagger
             public class Get
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -8013,10 +8013,10 @@ public partial class Swagger
             public class Put
             {
                 public string description;
-                public Response responses;
+                public Responses responses;
                 public Parameter[] parameters;
 
-                public class Response
+                public class Responses
                 {
                     public Default @default;
 
@@ -8043,19 +8043,19 @@ public partial class Swagger
                     public class Schema
                     {
                         public string type;
-                        public Property properties;
+                        public Properties properties;
 
-                        public class Property
+                        public class Properties
                         {
-                            public EventFilter eventFilters;
+                            public EventFilters eventFilters;
 
-                            public class EventFilter
+                            public class EventFilters
                             {
                                 public string type;
                                 public string description;
-                                public Item items;
+                                public Items items;
 
-                                public class Item
+                                public class Items
                                 {
                                     public string type;
                                 }

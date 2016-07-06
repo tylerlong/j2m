@@ -8,9 +8,9 @@ const getType = (key, value) => {
   if (type === 'number' && isInteger(value)) {
     return 'integer';
   } else if (type === 'array') {
-    return `${getType(key, value[0])}[]`;
+    return `${getType(singularize(key), value[0])}[]`;
   } else if (type === 'object') {
-    return pascalCase(singularize(key));
+    return pascalCase(key);
   }
   return type;
 };
@@ -28,7 +28,7 @@ const getClass = (_name, _obj) => {
     obj = obj.reduce((prev, data) => deepmerge(prev, data), {});
   }
   return {
-    name: pascalCase(singularize(name)),
+    name: pascalCase(name),
     fields: getFields(obj),
     classes: getFields(obj).filter((field) => /[A-Z]/.test(field.type[0]))
       .map((field) => getClass(field.type, field.value)),
