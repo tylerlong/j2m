@@ -22,7 +22,7 @@ nunjucks.addFilter('csharp_type', (type) => {
   return type;
 });
 nunjucks.addFilter('csharp_name', (name) => {
-  if (['operator', 'default', 'in', 'enum'].indexOf(name) > -1) {
+  if (['operator', 'default', 'in', 'enum', 'ref'].indexOf(name) > -1) {
     return `@${name}`;
   }
   if (name.startsWith('$')) {

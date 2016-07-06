@@ -4347,7 +4347,7 @@ public partial class Swagger
 
             public class Property
             {
-                public Ref ref;
+                public Ref @ref;
                 public Type type;
 
                 public class Ref
@@ -4684,7 +4684,7 @@ public partial class Swagger
             {
                 public WeeklyRange weeklyRanges;
                 public Range ranges;
-                public Ref ref;
+                public Ref @ref;
 
                 public class WeeklyRange
                 {
