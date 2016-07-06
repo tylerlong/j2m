@@ -1,7 +1,7 @@
 #! /usr/bin/env node
 /* eslint no-console: "off" */
 const program = require('commander');
-const JsonHelper = require('./helpers/json');
+const { readFile, readFolder } = require('./helpers/json');
 
 
 const options = new Map([
@@ -38,7 +38,7 @@ or "${options.get('folder')[0]}" but not both.`);
 let json = null;
 try {
   json = program.json !== undefined ?
-    JsonHelper.readFile(program.json) : JsonHelper.readFolder(program.folder);
+    readFile(program.json) : readFolder(program.folder);
 } catch (e) {
   console.error(e.message);
   process.exit(1);
