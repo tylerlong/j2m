@@ -1,6 +1,6 @@
 {
   "name": "json2model",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "description": "Generate models according to json data.",
   "main": "j2m.js",
   "dependencies": {
@@ -9,7 +9,7 @@
     "curry": "^1.2.0",
     "deepmerge": "^0.2.10",
     "nunjucks": "^2.4.2",
-    "pluralize": "^3.0.0"
+    "pluralize": "github:blakeembrey/pluralize"
   },
   "devDependencies": {
     "eslint": "^2.13.1",

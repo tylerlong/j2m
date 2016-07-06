@@ -4526,7 +4526,7 @@ public partial class Swagger
             }
         }
 
-        public class RingOutRequestto
+        public class RingOutRequestTo
         {
             public string type;
             public Property properties;
