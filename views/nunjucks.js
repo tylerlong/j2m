@@ -1,11 +1,8 @@
-const path = require('path');
-const fs = require('fs');
 const nunjucks = require('nunjucks');
 const { pascalCase } = require('change-case');
 
 
-const viewsPath = path.dirname(fs.realpathSync(__filename));
-const env = nunjucks.configure(viewsPath, {
+const env = nunjucks.configure(__dirname, {
   autoescape: false,
   trimBlocks: true,
   lstripBlocks: true,
