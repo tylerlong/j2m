@@ -83,7 +83,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
             public string @default;
@@ -93,7 +93,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -102,7 +102,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -111,7 +111,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -120,7 +120,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -129,7 +129,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -138,7 +138,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -147,7 +147,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -156,7 +156,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -165,7 +165,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -174,7 +174,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -183,7 +183,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -192,7 +192,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
             public string @default;
@@ -202,7 +202,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -211,7 +211,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -220,7 +220,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -229,7 +229,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -238,7 +238,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -247,7 +247,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -256,7 +256,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -265,7 +265,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -274,7 +274,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -283,7 +283,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
             public string[] @enum;
@@ -293,7 +293,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -302,7 +302,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -311,7 +311,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -320,7 +320,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -329,7 +329,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -338,7 +338,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -347,7 +347,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }
@@ -356,7 +356,7 @@ public partial class Swagger
         {
             public string name;
             public string @in;
-            public bool required;
+            public bool? required;
             public string type;
             public string description;
         }

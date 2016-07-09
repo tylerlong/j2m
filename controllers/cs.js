@@ -8,7 +8,8 @@ const typeMap = new Map([
   ['integer[]', 'int?[]'],
   ['number', 'double?'],
   ['number[]', 'double?[]'],
-  ['boolean', 'bool'],
+  ['boolean', 'bool?'],
+  ['boolean[]', 'bool?[]'],
 ]);
 nunjucks.addFilter('csharp_type', (type) => {
   if (typeMap.has(type)) {
