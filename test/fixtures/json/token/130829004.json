@@ -1,0 +1,10 @@
+{
+  "access_token": "U0pDMTFQMDFQQVMwMnxBQUJuRktXM2pDVHNuY1Y1OGwyNm4tSko5LUdiWExpNS1Vc18wa29vajdQSVdYZDFRX1prenZGR0x1VWcxa19OZEZJOEVhRHNxRWdJVUhPV3FzbEwwTUtuNUU1eU1qaUJTT2h2cjZSYUdsbW93ZzFLQ1pMRy1BM3RrZTBGaEVGeDJVZ3xZSXJwSXd8MTJEZTBVazlRaWwtWnFxX2lJWjRQZw",
+  "token_type": "bearer",
+  "expires_in": 3599,
+  "refresh_token": "U0pDMTFQMDFQQVMwMnxBQUJuRktXM2pDVHNuY1Y1OGwyNm4tSko5LUdiWExpNS1Vc18wa29vajdQSVdYZDFRX1prenZGR0x1VWcxa19OZEZJOEVhRHNxRWdJVU0xSzFJYWk3X0lMdmo3cWFQTVVsSXh2cjZSYUdsbW93Z2M4Q2FrODBGX01rZTBGaEVGeDJVZ3xZSXJwSXd8YlRvdnJTaE5tcW5mX2tjdC1NSjJzdw",
+  "refresh_token_expires_in": 604799,
+  "scope": "ReadMessages ReadPresence Faxes ReadAccounts EditAccounts EditMessages EditCallLog SMS ReadCallRecording Contacts EditPresence EditExtensions RingOut ReadContacts ReadCallLog Accounts EditCustomData",
+  "owner_id": "130829004",
+  "endpoint_id": "4jij03F1Rguw31XQfk-E8Q"
+}
