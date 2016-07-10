@@ -1,0 +1,10 @@
+{
+  "Sandbox": true,
+  "Server": "",
+  "AppKey": "myAppKey",
+  "AppSecret": "myAppSecret",
+  "Username": "myUsername",
+  "Extension": "myExtension",
+  "Password": "myPassword",
+  "Receiver": "receiverNumber"
+}

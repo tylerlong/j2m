@@ -1,6 +1,5 @@
 const { getClass } = require('../helpers/schema');
 const nunjucks = require('../views/nunjucks');
-const { camelCase } = require('change-case');
 
 
 const typeMap = new Map([
@@ -26,7 +25,7 @@ nunjucks.addFilter('csharp_name', function f(name) {
   if (keywordSet.has(name)) {
     return `@${name}`;
   }
-  return camelCase(name);
+  return name;
 });
 
 const render = (name, json) => {
