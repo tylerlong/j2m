@@ -11,5 +11,14 @@ const listFolders = filterFolder((file) => fs.lstatSync(file).isDirectory());
 
 const listFiles = filterFolder((file) => fs.lstatSync(file).isFile());
 
+const exists = (uri) => {
+  try {
+    fs.accessSync(uri, fs.F_OK);
+    return true;
+  } catch (e) {
+    return false;
+  }
+};
 
-module.exports = { listFolders, listFiles };
+
+module.exports = { listFolders, listFiles, exists };
