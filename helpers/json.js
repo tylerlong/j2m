@@ -12,5 +12,7 @@ const readFolder = (folder) => readFiles(fs.readdirSync(folder)
   .filter((file) => path.extname(file) === '.json')
   .map((file) => path.join(folder, file)));
 
+const merge = (json1, json2) => deepmerge(json1, json2);
 
-module.exports = { readFile, readFiles, readFolder };
+
+module.exports = { readFile, readFiles, readFolder, merge };

@@ -1,5 +1,5 @@
 const assert = require('assert');
-const { readFiles, readFolder } = require('../../helpers/json');
+const { readFiles, readFolder, merge } = require('../../helpers/json');
 
 
 const mergedJson = `
@@ -32,6 +32,15 @@ describe('jsonHelper', () => {
     it('should read folder', () => {
       const json = readFolder('test/fixtures/json/test/');
       assert.equal(mergedJson, JSON.stringify(json, null, 2));
+    });
+  });
+
+  describe('merge()', () => {
+    it('should merge two json', () => {
+      const json1 = { a: '111' };
+      const json2 = { b: '222' };
+      const merged = { a: '111', b: '222' };
+      assert.deepEqual(merged, merge(json1, json2));
     });
   });
 });
