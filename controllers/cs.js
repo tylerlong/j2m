@@ -1,5 +1,6 @@
 const { getClass } = require('../helpers/schema');
 const nunjucks = require('../views/nunjucks');
+const { pascalCase } = require('change-case');
 
 
 const typeMap = new Map([
@@ -29,7 +30,7 @@ nunjucks.addFilter('csharp_name', function f(name) {
 });
 
 const render = (name, json) => {
-  const cls = getClass(name, json);
+  const cls = getClass(pascalCase(name), json);
   let model = nunjucks.render('cs/index.cs', { cls });
   model = model.replace(/ +$/gm, ''); // trim blank lines
   model = model.trim();

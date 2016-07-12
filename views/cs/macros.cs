@@ -17,13 +17,13 @@ public {{ fld.type | csharp_type }} {{ fld.name | csharp_name }};
 
 
 {% macro class(cls) %}
-public partial class {{ cls.name | pascal }}
+public partial class {{ cls.name }}
 {{ class_body(cls) }}
 {%- endmacro %}
 
 
 {% macro inner_class(cls) %}
 
-public class {{ cls.name | pascal }}
+public class {{ cls.name }}
 {{ class_body(cls) }}
 {%- endmacro %}
