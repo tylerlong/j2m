@@ -1,16 +1,16 @@
-{% macro field(fld) -%}
-public {{ fld.type | csharp_type }} {{ fld.name | csharp_name }};
+{% macro field(fld, cls) -%}
+public {% if fld.type == cls.name %}_{% endif %}{{ fld.type | csharp_type }} {{ fld.name | csharp_name }};
 {%- endmacro %}
 
 
 {% macro class_body(cls) %}
 {
     {% for fld in cls.fields %}
-    {{ field(fld) }}
+    {{ field(fld, cls) }}
     {% endfor -%}
 
     {% for innerClass in cls.classes %}
-    {{ inner_class(innerClass) | indent(4, false) }}
+    {{ inner_class(innerClass, cls) | indent(4, false) }}
     {%- endfor -%}
 }
 {%- endmacro %}
@@ -22,8 +22,8 @@ public partial class {{ cls.name }}
 {%- endmacro %}
 
 
-{% macro inner_class(cls) %}
+{% macro inner_class(innerClass, cls) %}
 
-public class {{ cls.name }}
-{{ class_body(cls) }}
+public class {% if innerClass.name == cls.name %}_{% endif %}{{ innerClass.name }}
+{{ class_body(innerClass) }}
 {%- endmacro %}

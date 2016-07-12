@@ -27,17 +27,11 @@ const getClass = (_name, _obj) => {
     name = name.slice(0, -2);
     obj = obj.reduce((prev, data) => deepmerge(prev, data), {});
   }
-  const fields = getFields(obj).map((field) => {
-    let type = field.type;
-    if (type === name) {
-      type = `_${type}`;
-    }
-    return { name: field.name, type, value: field.value };
-  });
+  const fields = getFields(obj);
   return {
     name,
     fields,
-    classes: fields.filter((field) => /[A-Z_]/.test(field.type[0]))
+    classes: fields.filter((field) => /[A-Z]/.test(field.type[0]))
       .map((field) => getClass(field.type, field.value)),
   };
 };
