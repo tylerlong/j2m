@@ -29,9 +29,9 @@ nunjucks.addFilter('csharp_name', function f(name) {
   return name;
 });
 
-const render = (name, json) => {
+const render = (name, json, partial = true) => {
   const cls = getClass(pascalCase(name), json);
-  let model = nunjucks.render('cs/index.cs', { cls });
+  let model = nunjucks.render('cs/index.cs', { cls, partial });
   model = model.replace(/ +$/gm, ''); // trim blank lines
   model = model.trim();
   return model;

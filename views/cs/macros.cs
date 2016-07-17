@@ -16,8 +16,8 @@ public {% if fld.type == cls.name %}_{% endif %}{{ fld.type | csharp_type }} {{ 
 {%- endmacro %}
 
 
-{% macro class(cls) %}
-public partial class {{ cls.name }}
+{% macro class(cls, partial) %}
+public {% if partial %}partial {% endif %}class {{ cls.name }}
 {{ class_body(cls) }}
 {%- endmacro %}
 
