@@ -1,59 +1,59 @@
 public partial class Account
 {
-    public string uri;
-    public int? id;
-    public ServiceInfo serviceInfo;
-    public Operator @operator;
-    public string mainNumber;
-    public string status;
-    public SignupInfo signupInfo;
-    public string setupWizardState;
+    public string uri { get; set; }
+    public int? id { get; set; }
+    public ServiceInfo serviceInfo { get; set; }
+    public Operator @operator { get; set; }
+    public string mainNumber { get; set; }
+    public string status { get; set; }
+    public SignupInfo signupInfo { get; set; }
+    public string setupWizardState { get; set; }
 
     public class ServiceInfo
     {
-        public string uri;
-        public Brand brand;
-        public ServicePlan servicePlan;
-        public BillingPlan billingPlan;
+        public string uri { get; set; }
+        public Brand brand { get; set; }
+        public ServicePlan servicePlan { get; set; }
+        public BillingPlan billingPlan { get; set; }
 
         public class Brand
         {
-            public string id;
-            public string name;
-            public HomeCountry homeCountry;
+            public string id { get; set; }
+            public string name { get; set; }
+            public HomeCountry homeCountry { get; set; }
 
             public class HomeCountry
             {
-                public string id;
-                public string uri;
-                public string name;
-                public string isoCode;
-                public string callingCode;
+                public string id { get; set; }
+                public string uri { get; set; }
+                public string name { get; set; }
+                public string isoCode { get; set; }
+                public string callingCode { get; set; }
             }
         }
 
         public class ServicePlan
         {
-            public string id;
-            public string name;
-            public string edition;
+            public string id { get; set; }
+            public string name { get; set; }
+            public string edition { get; set; }
         }
 
         public class BillingPlan
         {
-            public string id;
-            public string name;
-            public string durationUnit;
-            public int? duration;
-            public string type;
+            public string id { get; set; }
+            public string name { get; set; }
+            public string durationUnit { get; set; }
+            public int? duration { get; set; }
+            public string type { get; set; }
         }
     }
 
     public class Operator
     {
-        public string uri;
-        public int? id;
-        public string extensionNumber;
+        public string uri { get; set; }
+        public int? id { get; set; }
+        public string extensionNumber { get; set; }
     }
 
     public class SignupInfo

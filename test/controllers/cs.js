@@ -6,11 +6,11 @@ const { render } = require('../../controllers/cs');
 const csharpCode = `
 public partial class User
 {
-    public string name;
-    public int?[] scores;
-    public double? height;
-    public int? age;
-    public double?[] performance;
+    public string name { get; set; }
+    public int?[] scores { get; set; }
+    public double? height { get; set; }
+    public int? age { get; set; }
+    public double?[] performance { get; set; }
 }
 `.trim();
 
