@@ -1,11 +1,14 @@
 const { pascalCase } = require('change-case');
 const deepmerge = require('deepmerge');
-const { isInteger, singularize } = require('./string');
+const { isInteger, isLong, singularize } = require('./string');
 
 
 const getType = (key, value) => {
   const type = ({}).toString.call(value).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
   if (type === 'number' && isInteger(value)) {
+    if (isLong(value)) {
+      return 'long';
+    }
     return 'integer';
   } else if (type === 'array') {
     return `${getType(singularize(key), value[0])}[]`;

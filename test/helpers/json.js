@@ -15,7 +15,8 @@ const mergedJson = `
   "performance": [
     12.34,
     56.78
-  ]
+  ],
+  "conversationId": 2147483648
 }
 `.trim();
 

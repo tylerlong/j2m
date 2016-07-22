@@ -6,6 +6,8 @@ const { pascalCase } = require('change-case');
 const typeMap = new Map([
   ['integer', 'int?'],
   ['integer[]', 'int?[]'],
+  ['long', 'long?'],
+  ['long[]', 'long?[]'],
   ['number', 'double?'],
   ['number[]', 'double?[]'],
   ['boolean', 'bool?'],

@@ -11,6 +11,7 @@ public partial class User
     public double? height { get; set; }
     public int? age { get; set; }
     public double?[] performance { get; set; }
+    public long? conversationId { get; set; }
 }
 `.trim();
 
